@@ -1,0 +1,172 @@
+{
+    "editor.fontFamily": "SF Mono",
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "workbench.statusBar.feedback.visible": false,
+    "editor.smoothScrolling": true,
+    "editor.wordWrap": "on",
+    "editor.tabCompletion": true,
+    "editor.fontSize": 13,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "python.pythonPath": "/usr/local/opt/python/bin/python3.7",
+    "git.autofetch": true,
+    "editor.fontWeight": "500",
+
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "platex",
+            "tools": [
+                "platex",
+                "dvipdfmx"
+            ]
+        },
+        {
+          "name": "latex",
+          "tools": [
+            "latex",
+            "dvipdfmx"
+          ]
+        },
+        {
+          "name": "xelatex",
+          "tools": [
+            "xelatex"
+          ]
+        },
+        {
+          "name": "pdflatex -> bibtex -> pdflatex*2",
+          "tools": [
+            "pdflatex",
+            "bibtex",
+            "pdflatex",
+            "pdflatex"
+          ]
+        },
+        
+        {
+            "name": "uplatex",
+            "tools": [
+                "uplatex",
+                "dvipdfmx"
+            ]
+        },
+        {
+          "name": "platex -> pbibtex -> platex*2 -> dvipdfmx",
+          "tools": [
+            "platex_doc",
+            "pbibtex",
+            "platex_doc",
+            "platex_doc",
+            "dvipdfmx",
+          ]
+        },
+    ],
+    "latex-workshop.latex.tools": [
+        {
+          "name": "latex",
+          "command": "latex",
+          "args": [
+            "%DOCFILE%"
+          ]
+        },
+        {
+          "name": "pdflatex",
+          "command": "pdflatex",
+          "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "%DOCFILE%"
+          ]
+        },
+        {
+          "name": "xelatex",
+          "command": "xelatex",
+          "args": [
+            "%DOCFILE%"
+          ]
+        },
+        {
+          "name": "bibtex",
+          "command": "bibtex",
+          "args": [
+            "%DOCFILE%"
+          ]
+        },
+        {
+            "name": "platex",
+            "command": "platex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "platex_doc",
+            "command": "platex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "uplatex",
+            "command": "uplatex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "dvipdfmx",
+            "command": "dvipdfmx",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pbibtex",
+            "command": "pbibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+      ],
+      "terminal.external.osxExec": "iTerm.app",
+      "terminal.integrated.fontSize": 13,
+      "vim.normalModeKeyBindings": [
+        {
+          "before": [";"],
+          "after": [":"]
+        },
+        {
+          "before": [":"],
+          "after": [";"]
+        },
+        {
+          "before": ["j"],
+          "after": ["k"]
+        },
+        {
+          "before": ["k"],
+          "after": ["j"]
+        }
+      ],
+      "vim.visualModeKeyBindings": [
+        {
+          "before": [";"],
+          "after": [":"]
+        },
+        {
+          "before": [":"],
+          "after": [";"]
+        },
+        {
+          "before": ["j"],
+          "after": ["k"]
+        },
+        {
+          "before": ["k"],
+          "after": ["j"]
+        }
+      ],
+      "latex-workshop.latex.recipe.default": "lastUsed"
+}
