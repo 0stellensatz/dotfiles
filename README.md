@@ -48,3 +48,8 @@ Also install these plug-ins.
 ## Set up iTerm 2
 
 Just import json file to iTerm 2. That's it. 😉
+
+## Set up Karabiner-Elements
+
+Read [documentation](https://pqrs.org/osx/karabiner/json.html#location)
+and import `gureum.json`.
