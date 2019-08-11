@@ -26,3 +26,11 @@ use `preamble_en` or `preamble_ja` instead of
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+
+## Set up VS Code
+
+Copy & paste contents of `settings.json` to `default.json` of VS Code. 
+
+## Set up iTerm 2
+
+Just import json file to iTerm 2. That's it. 😉
