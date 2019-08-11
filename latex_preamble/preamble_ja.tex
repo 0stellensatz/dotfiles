@@ -1,0 +1,74 @@
+% engine recommendation : platex 
+% class recommendation  : jsarticle
+% 
+
+% packages
+
+\usepackage[dvipdfmx]{graphicx}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{kotex}
+\usepackage[japanese]{babel}
+
+\usepackage{pxrubrica}
+
+% terminology
+
+\newcommand{\termTheorem}{定理\rmfamily}
+\newcommand{\termAxiom}{公理\rmfamily}
+\newcommand{\termProposition}{命題\rmfamily}
+\newcommand{\termLemma}{補題\rmfamily}
+\newcommand{\termConjecture}{推測\rmfamily}
+\newcommand{\termCorollary}{系\rmfamily}
+\newcommand{\termDefinition}{定義\rmfamily}
+\newcommand{\termProblem}{問題\rmfamily}
+\newcommand{\termSolution}{解答\rmfamily}
+\newcommand{\termExample}{例題\rmfamily}
+\newcommand{\termRemark}{\normalfont 注\rmfamily}
+\newcommand{\termNote}{\normalfont ノート\rmfamily}
+\newcommand{\termProof}{\normalfont 証明\rmfamily}
+
+% mathematics
+
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+
+\newcommand{\Rl}{\mathbb{R}}
+\newcommand{\Qu}{\mathbb{Q}}
+\newcommand{\Za}{\mathbb{Z}}
+\newcommand{\Na}{\mathbb{N}}
+\newcommand{\Co}{\mathbb{C}}
+\newcommand{\Fi}{\mathbb{F}}
+
+\theoremstyle{plain}
+
+\newtheorem{theorem}{\termTheorem}[section]
+\newtheorem{axiom}{\termAxiom}[section]
+\newtheorem{proposition}{\termProposition}[section]
+
+\newtheorem{lemma}[theorem]{\termLemma}
+\newtheorem{conjecture}[theorem]{\termConjecture}
+
+\newtheorem{corollary}{\termCorollary}[theorem]
+
+\theoremstyle{definition}
+
+\newtheorem{definition}{\termDefinition}[section]
+\newtheorem{problem}{\termProblem}[section]
+
+\newtheorem{solution}{\termSolution}[problem]
+
+\newtheorem*{example}{\termExample}
+
+\theoremstyle{remark}
+
+\newtheorem*{note}{\termNote}
+\newtheorem*{remark}{\termRemark}
+
+\renewcommand\qedsymbol{$\blacksquare$}

@@ -1,0 +1,79 @@
+% engine recommendation : xelatex
+% class recommendation  : oblivoir
+% note                  : use \usepackage{fapapersize}
+%                             \usefapapersize{a,b,c,d,e,f}
+%                         for customizing layout.
+
+% packages
+
+\usepackage{graphicx}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+\usepackage[utf8]{inputenc}
+\usepackage[UKenglish]{babel}
+\renewcommand\dateUKenglish{\def\today{\number\day~%
+ \ifcase \month \or January\or February\or March\or April\or May\or June\or
+   July\or August\or September\or October\or November\or December\fi\space
+ \number\year}}
+\dateUKenglish
+
+\usepackage{kotex}
+
+% terminology
+
+\newcommand{\termTheorem}{Theorem}
+\newcommand{\termAxiom}{Axiom}
+\newcommand{\termProposition}{Proposition}
+\newcommand{\termLemma}{Lemma}
+\newcommand{\termConjecture}{Conjecture}
+\newcommand{\termCorollary}{Corollary}
+\newcommand{\termDefinition}{Definition}
+\newcommand{\termProblem}{Problem}
+\newcommand{\termSolution}{Solution}
+\newcommand{\termExample}{Example}
+\newcommand{\termRemark}{Remark}
+\newcommand{\termNote}{Note}
+\newcommand{\termProof}{Proof}
+
+% mathematics
+
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\sech}{sech}
+
+\newcommand{\Rl}{\mathbb{R}}
+\newcommand{\Qu}{\mathbb{Q}}
+\newcommand{\Za}{\mathbb{Z}}
+\newcommand{\Na}{\mathbb{N}}
+\newcommand{\Co}{\mathbb{C}}
+\newcommand{\Fi}{\mathbb{F}}
+
+\theoremstyle{plain}
+
+\newtheorem{theorem}{\termTheorem}[section]
+\newtheorem{axiom}{\termAxiom}[section]
+\newtheorem{proposition}{\termProposition}[section]
+
+\newtheorem{lemma}[theorem]{\termLemma}
+\newtheorem{conjecture}[theorem]{\termConjecture}
+
+\newtheorem{corollary}{\termCorollary}[theorem]
+
+\theoremstyle{definition}
+
+\newtheorem{definition}{\termDefinition}[section]
+\newtheorem{problem}{\termProblem}[section]
+
+\newtheorem{solution}{\termSolution}[problem]
+
+\newtheorem*{example}{\termExample}
+
+\theoremstyle{remark}
+
+\newtheorem*{note}{\termNote}
+\newtheorem*{remark}{\termRemark}
+
+\renewcommand\qedsymbol{$\blacksquare$}
