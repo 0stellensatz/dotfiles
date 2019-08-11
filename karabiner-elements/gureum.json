@@ -1,0 +1,52 @@
+{
+    "title": "switch between Gureum IM and Apple Japanese IM",
+    "rules": [
+      {
+        "description": "option+1 for Gureum IM, option+2 for Apple Japanese IM",
+        "manipulators": [
+          {
+            "from": {
+              "key_code": "1",
+              "modifiers": {
+                "mandatory": [
+                  "option"
+                ],
+                "optional": [
+                  "any"
+                ]
+              }
+            },
+            "to": [
+              {
+                "select_input_source": {
+                  "input_mode_id": "org.youknowone.inputmethod.Gureum.han3-2012"
+                }
+              }
+            ],
+            "type": "basic"
+          },
+          {
+            "from": {
+              "key_code": "2",
+              "modifiers": {
+                "mandatory": [
+                  "option"
+                ],
+                "optional": [
+                  "any"
+                ]
+              }
+            },
+            "to": [
+              {
+                "select_input_source": {
+                  "input_mode_id": "com.apple.inputmethod.Roman"
+                }
+              }
+            ],
+            "type": "basic"
+          }
+        ]
+      }
+    ]
+  }
