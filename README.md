@@ -7,6 +7,7 @@ This repository hosts my setting/preset files of these applications:
 - VS Code
 - iTerm 2
 - zsh
+- Karabiner-Elements
 
 ## Set up LaTeX
 
