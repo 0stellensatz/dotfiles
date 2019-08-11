@@ -1,0 +1,45 @@
+snippet sign "Signature"
+S. Hyeon
+
+- https://laut.be
+- https://keybase.io/loudcolour
+endsnippet
+
+snippet email "Email" i
+loudclr@gmail.com
+endsnippet
+
+snippet name "Name" i
+S. Hyeon
+endsnippet
+
+snippet namel "Name (LaTeX)" i
+S. Hy\u{o}n
+endsnippet
+
+snippet namej "Name (Japanese)" i
+玄 承賢
+endsnippet
+
+snippet date "Date" i
+`date +%F`
+endsnippet
+
+snippet time "Time" i
+`date +%T`
+endsnippet
+
+snippet datetime "Date and Time" i
+`date +"%F %T"`
+endsnippet
+
+snippet box "Box"
+`!p snip.rv = '┌'+'─'*(len(t[1])+2)+'┐'`
+│ $1 │
+`!p snip.rv = '└'+'─'*(len(t[1])+2)+'┘'`
+$0
+endsnippet
+
+snippet dc "Doucument Class" b
+\documentclass{$0}
+endsnippet
