@@ -40,7 +40,7 @@ Also install these plug-ins.
 - Korean Language Package
 - LaTeX Workshop
 - markdownlint
-- Markdown Math
+- Markdown+Math
 - Polacode
 - Rust (rls)
 - Vim
