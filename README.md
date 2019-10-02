@@ -44,6 +44,7 @@ Also install these plug-ins.
 - Polacode
 - Rust (rls)
 - Vim
+- Ruby
 
 ## Set up iTerm 2
 
