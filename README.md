@@ -42,7 +42,6 @@ Also install these plug-ins.
 - Markdown+Math
 - Polacode
 - Vim
-- Ruby
 
 ## Set up iTerm 2
 
