@@ -32,17 +32,15 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 Copy & paste contents of `settings.json` to `settings.json` of VS Code.
 Also install these plug-ins.
 
-- C/C++
 - CodeLLDB
-- Go
 - Python
+- Rust (rls)
 - Japanese Language Package
 - Korean Language Package
 - LaTeX Workshop
 - markdownlint
 - Markdown+Math
 - Polacode
-- Rust (rls)
 - Vim
 
 ## Set up iTerm 2
