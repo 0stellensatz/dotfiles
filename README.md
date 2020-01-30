@@ -27,6 +27,11 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
+## Set up ZSH
+
+Make symlink `.zshrc` linked to path to dotfiles/zshrc/zshrc
+`ln -s path/to/dotfiles/zshrc/zshrc ~/.zshrc`.
+
 ## Set up iTerm 2
 
 Just import json file to iTerm 2. That's it. 😉
@@ -35,3 +40,4 @@ Just import json file to iTerm 2. That's it. 😉
 
 Read [documentation](https://pqrs.org/osx/karabiner/json.html#location)
 and import `gureum.json`.
+
