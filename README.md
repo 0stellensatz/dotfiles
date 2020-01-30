@@ -27,22 +27,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-## Set up VS Code
-
-Copy & paste contents of `settings.json` to `settings.json` of VS Code.
-Also install these plug-ins.
-
-- CodeLLDB
-- Python
-- Rust (rls)
-- Japanese Language Package
-- Korean Language Package
-- LaTeX Workshop
-- markdownlint
-- Markdown+Math
-- Polacode
-- Vim
-
 ## Set up iTerm 2
 
 Just import json file to iTerm 2. That's it. 😉
