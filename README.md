@@ -41,3 +41,18 @@ Just import json file to iTerm 2. That's it. 😉
 Read [documentation](https://pqrs.org/osx/karabiner/json.html#location)
 and import `gureum.json`.
 
+## Set up Visual Studio Code
+
+Copy & paste contents of `settings.json` to `settings.json` of VS Code.
+Also install these plug-ins.
+
+- CodeLLDB
+- Python
+- Rust (rls)
+- Japanese Language Package
+- Korean Language Package
+- LaTeX Workshop
+- markdownlint
+- Markdown+Math
+- Polacode
+- Vim
