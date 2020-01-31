@@ -44,7 +44,7 @@ and import `gureum.json`.
 ## Set up Visual Studio Code
 
 Copy & paste contents of `settings.json` to `settings.json` of VS Code.
-Also install these plug-ins.
+Then install these plug-ins below.
 
 - CodeLLDB
 - Python
