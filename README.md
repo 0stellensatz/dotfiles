@@ -8,6 +8,7 @@ This repository hosts my setting/preset files of these applications:
 - ZSH
 - iTerm 2
 - Karabiner-Elements
+- Firefox
 
 ## Set up LaTeX
 
@@ -57,3 +58,28 @@ Then install these plug-ins below.
 - Markdown+Math
 - Polacode
 - Vim
+
+## Set up Firefox
+
+- In Firefox, there exists a chance that images and elements rendered have
+inaccurate and over-saturated colours.
+By configuring from `about:config` on colour management, over-saturated colours
+can be corrected. ([Reference](https://cameratico.com/guides/firefox-color-management/))
+- Enable [DNS-over-HTTPS](https://support.mozilla.org/en-US/kb/firefox-dns-over-https)
+- Install Add-ons
+  - 1Password
+  - Adblock Plus
+  - DuckDuckGo Privacy Essentials
+  - Enhancer for YouTube
+  - Firefox Multi-Account Containers
+  - Grammarly
+  - HTTPS Everywhere
+  - Keybase
+  - Mailvelope
+  - Popup Blocker
+  - Search by Image
+  - Web Archives
+  - Tab2QR
+- Connect Mailvelope to GnuPG
+- [Sliding Bookmarkbar](https://github.com/zvuc/firefox-sliding-bookmarks-bar)
+- Import bookmarks
