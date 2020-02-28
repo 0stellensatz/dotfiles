@@ -31,8 +31,19 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ## Set up ZSH
 
-Make symlink `.zshrc` linked to path to dotfiles/zshrc/zshrc
-`ln -s path/to/dotfiles/zshrc/zshrc ~/.zshrc`.
+1. Install [Oh My ZSH!](https://ohmyz.sh/)
+1. Install [Zplug](https://github.com/zplug/zplug)
+1. Append following lines to `.zshrc`
+
+```
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-autosuggestions"
+
+zplug load
+```
 
 ## Set up iTerm 2
 
