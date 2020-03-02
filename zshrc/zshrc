@@ -1,0 +1,22 @@
+export ZSH="/Users/loudcolour/.oh-my-zsh" # oh-my-zsh installation
+ZSH_THEME="dragon"        # zsh theme
+
+export PATH="/Users/loudcolour/sage-8.3:$PATH" # add sage path to $PATH
+export SAGE_ROOT="/Users/loudcolour/sage-8.3"  # root directory of sage
+export LANG=en_US.UTF-8        # locale
+export GPG_TTY=$(tty)
+
+plugins=(git) # load git plugin
+
+source $ZSH/oh-my-zsh.sh
+
+[[ -s /Users/loudcolour/.autojump/etc/profile.d/autojump.sh ]] && source /Users/loudcolour/.autojump/etc/profile.d/autojump.sh
+autoload -U compinit && compinit -u
+
+export ZPLUG_HOME=/usr/local/opt/zplug # zplug
+source $ZPLUG_HOME/init.zsh
+
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-autosuggestions"
+
+zplug load
