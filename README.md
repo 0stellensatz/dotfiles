@@ -42,8 +42,8 @@ Just import json file to iTerm 2. That's it. 😉
 
 ## Set up Karabiner-Elements
 
-Read [documentation](https://pqrs.org/osx/karabiner/json.html#location)
-and import `gureum.json`.
+Read [documentation](https://karabiner-elements.pqrs.org/docs/manual/misc/configuration-file-path/)
+and import `gureum.json` (or just make symlink).
 
 ## Set up Visual Studio Code
 
@@ -83,5 +83,4 @@ can be corrected. ([Reference](https://cameratico.com/guides/firefox-color-manag
   - Web Archives
   - Tab2QR
 - Connect Mailvelope to GnuPG
-- [Sliding Bookmarkbar](https://github.com/zvuc/firefox-sliding-bookmarks-bar)
 - Import bookmarks

@@ -19,7 +19,7 @@
             "to": [
               {
                 "select_input_source": {
-                  "input_mode_id": "org.youknowone.inputmethod.Gureum.han3-2012"
+                  "input_mode_id": "org.youknowone.inputmethod.Gureum.han390"
                 }
               }
             ],
