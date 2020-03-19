@@ -40,7 +40,7 @@
             "to": [
               {
                 "select_input_source": {
-                  "input_mode_id": "com.apple.inputmethod.Roman"
+                  "input_mode_id": "com.apple.inputmethod.Japanese"
                 }
               }
             ],
