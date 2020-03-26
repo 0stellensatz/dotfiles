@@ -20,7 +20,7 @@ use `preamble_en` or `preamble_ja` instead of
 
 ## Set up Vim
 
-1. Make symlink `.vimrc` linked to path to dotfiles/vimrc/vimrc
+1. Make symlink `.vimrc` linked to path to `dotfiles/vimrc/vimrc` by
 `ln -s path/to/dotfiles/vimrc/vimrc ~/.vimrc`
 2. Install `junegunn/vim-plug`  
 
@@ -33,7 +33,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 1. Install [Oh My ZSH!](https://ohmyz.sh/)
 1. Install [Zplug](https://github.com/zplug/zplug)
-1. Make symlink `.zshrc` linked to path to dotfiles/zshrc/zshrc
+1. Make symlink `.zshrc` linked to path to `dotfiles/zshrc/zshrc` by
 `ln -s path/to/dotfiles/zshrc/zshrc ~/.zshrc`
 
 ## Set up iTerm 2
@@ -42,8 +42,13 @@ Just import json file to iTerm 2. That's it. 😉
 
 ## Set up Karabiner-Elements
 
-Read [documentation](https://karabiner-elements.pqrs.org/docs/manual/misc/configuration-file-path/)
-and import `gureum.json` (or just make symlink).
+Make symlink `karabiner.json` linked to path to `dotfiles/karabiner/karabiner.json` by
+`ln -s /path/to/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json`
+
+## Set up Hammerspoon
+
+Make symlink `init.lua` linked to path to `dotfiles/hammerspoon/init.lua` by
+`ln -s /path/to/dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua`
 
 ## Set up Visual Studio Code
 
