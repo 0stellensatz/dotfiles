@@ -87,9 +87,9 @@ do
 		window:setFrame(frame)
 	end
 
-	hs.hotkey.bind({'option','command','shift'}, '0', expand_window)
-	hs.hotkey.bind({'option','command','shift'}, '1', expand_window_half_left)
-	hs.hotkey.bind({'option','command','shift'}, '2', expand_window_half_right)
+	hs.hotkey.bind({'command','shift'}, '0', expand_window)
+	hs.hotkey.bind({'command','shift'}, '1', expand_window_half_left)
+	hs.hotkey.bind({'command','shift'}, '2', expand_window_half_right)
 end
 
 local input_source = hs.keycodes.currentSourceID()
