@@ -1,21 +1,21 @@
 " .vimrc.d
 
-command RCe :vsp ~/.vimrc.d/editor.vim
-command RCp :vsp ~/.vimrc.d/plugins.vim
-command RCpc :vsp ~/.vimrc.d/plugins-config.vim
-command RCs :vsp ~/.vimrc.d/shortcuts.vim
+command Settings :vsp $DOTFILES/vimrc/editor.vim
+command SettingsPlugin :vsp $DOTFILES/vimrc/plugins.vim
+command SettingsPluginConfig :vsp $DOTFILES/vimrc/plugins-config.vim
+command SettingsShortcuts :vsp $DOTFILES/vimrc/shortcuts.vim
 
 " tex
 
-command BL :! latex % && dvipdfmx %:r
-command BPL :! platex % && dvipdfmx %:r
-command BXL :! xelatex %
+command BuildL :! latex % && dvipdfmx %:r
+command BuildP :! platex % && dvipdfmx %:r
+command BuildX :! xelatex %
 
-command CL :! rm %:r.aux %:r.log %:r.out %:r.dvi %:r.pdf
+command ClearTeX :! rm %:r.aux %:r.log %:r.out %:r.dvi %:r.pdf
 
 command OpenPDF :! open %:r.pdf
-
-command Jmath :%s/。/．/g | %s/、/，/g
+command Open :! open %
+command PBcopy :! cat % | pbcopy
 
 " swap ; and :
 
@@ -30,3 +30,4 @@ nnoremap j k
 vnoremap j k
 nnoremap k j
 vnoremap k j
+

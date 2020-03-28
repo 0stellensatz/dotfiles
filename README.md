@@ -2,13 +2,23 @@
 
 This repository hosts my setting/preset files of these applications:
 
+- ZSH
 - LaTeX
 - Vim
 - VS Code
-- ZSH
 - iTerm 2
 - Karabiner-Elements
 - Firefox
+
+## Set up ZSH
+
+1. Install [Oh My ZSH!](https://ohmyz.sh/)
+1. Install [Zplug](https://github.com/zplug/zplug)
+1. Make symlink `.zshrc` linked to path to `dotfiles/zshrc/zshrc` by
+`ln -s path/to/dotfiles/zshrc/zshrc ~/.zshrc`
+
+Variable for `path/to/dotfiles` is set on `.zshrc`, which means accessing `path/to/dotfiles`
+by `$DOTFILES` is available for further steps.
 
 ## Set up LaTeX
 
@@ -20,8 +30,8 @@ use `preamble_en` or `preamble_ja` instead of
 
 ## Set up Vim
 
-1. Make symlink `.vimrc` linked to path to `dotfiles/vimrc/vimrc` by
-`ln -s path/to/dotfiles/vimrc/vimrc ~/.vimrc`
+1. Make symlink `.vimrc` linked to path to `$DOTFILES/vimrc` by
+`ln -s $DOTFILES/vimrc/vimrc ~/.vimrc`
 2. Install `junegunn/vim-plug`  
 
 ``` shell
@@ -29,26 +39,19 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-## Set up ZSH
-
-1. Install [Oh My ZSH!](https://ohmyz.sh/)
-1. Install [Zplug](https://github.com/zplug/zplug)
-1. Make symlink `.zshrc` linked to path to `dotfiles/zshrc/zshrc` by
-`ln -s path/to/dotfiles/zshrc/zshrc ~/.zshrc`
-
 ## Set up iTerm 2
 
 Just import json file to iTerm 2. That's it. 😉
 
 ## Set up Karabiner-Elements
 
-Make symlink `karabiner.json` linked to path to `dotfiles/karabiner/karabiner.json` by
-`ln -s /path/to/dotfiles/karabiner/karabiner.json ~/.config/karabiner/karabiner.json`
+Make symlink `karabiner.json` linked to path to `$DOTFILES/karabiner/karabiner.json` by
+`ln -s $DOTFILES/karabiner/karabiner.json ~/.config/karabiner/karabiner.json`
 
 ## Set up Hammerspoon
 
-Make symlink `init.lua` linked to path to `dotfiles/hammerspoon/init.lua` by
-`ln -s /path/to/dotfiles/hammerspoon/init.lua ~/.hammerspoon/init.lua`
+Make symlink `init.lua` linked to path to `$DOTFILES/hammerspoon/init.lua` by
+`ln -s $DOTFILES/hammerspoon/init.lua ~/.hammerspoon/init.lua`
 
 ## Set up Visual Studio Code
 

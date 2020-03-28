@@ -19,6 +19,7 @@ set backspace=indent,eol,start
 set cursorline
 set noexpandtab
 set number
+set hidden
 set ruler
 set shiftwidth=4
 set shortmess=at

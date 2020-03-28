@@ -1,6 +1,6 @@
 hs.hotkey.bind({'control','command'},'H',hs.reload)
-hs.hotkey.bind({'control','command'},'T',function() hs.application.launchOrFocus('iTerm') end)
 hs.hotkey.bind({'control','command'},'A',function() hs.application.launchOrFocus('Activity Monitor') end)
+hs.hotkey.bind('','f10',function() hs.application.launchOrFocus('iTerm') end)
 
 do
 	-- key modification from option(right) to f13 by karabiner-elements is required.

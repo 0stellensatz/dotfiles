@@ -8,11 +8,11 @@ xmap ga <Plug>(EasyAlign)
 let g:seoul256_background = 236
 colo seoul256
 
-" configuration for `sirver/ultisnips`
+" configuration for `Sirver/ultisnips`
 
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vimrc.d/UltiSnips']
 
-let g:UltiSnipsExpandTrigger='<c-k>'
+let g:UltiSnipsExpandTrigger='<c-e>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'
 let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 

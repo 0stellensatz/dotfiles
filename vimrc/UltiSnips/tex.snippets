@@ -1,11 +1,11 @@
-snippet be "\begin{} / \end{}" i
+snippet block "\begin{} / \end{}" i
 \begin{$1}
 	$2
 \end{$1}
 $0
 endsnippet
 
-snippet bf "Bold" i
+snippet textbf "Bold" i
 \textbf{$1}$0
 endsnippet
 
@@ -13,46 +13,46 @@ snippet emph "Emphasize" i
 \emph{$1}$0
 endsnippet
 
-snippet s "$$" i
+snippet ss "$$" i
 $$1$$0
 endsnippet
 
-snippet d "\[\]" b
+snippet eq "\[\]" b
 \[
 	$1
 \]
 $0
 endsnippet
 
-snippet up "Up" i
+snippet sup "Sup" i
 ^{$1}$0
 endsnippet
 
-snippet down "Down" i
+snippet sub "Sub" i
 _{$1}$0
 endsnippet
 
-snippet pa "\left(\right)" i
+snippet par1 "\left(\right)" i
 \left( $1 \right)$0
 endsnippet
 
-snippet cu "\left\{\right\}" i
+snippet par2 "\left\{\right\}" i
 \left\\{ $1 \right\\}$0
 endsnippet
 
-snippet br "\left[\right]" i
+snippet par3 "\left[\right]" i
 \left[ $1 \right]$0
 endsnippet
 
-snippet ang "\langle\rangle" i
+snippet par4 "\langle\rangle" i
 \langle $1 \rangle$0
 endsnippet
 
-snippet sq "Square Root" i
+snippet sqrt "Square Root" i
 \sqrt{$1}$0
 endsnippet
 
-snippet lim "Limit" i
+snippet limit "Limit" i
 \lim_{$1 \to $2}$0
 endsnippet
 
@@ -60,23 +60,19 @@ snippet int "Integral" i
 \int_{$1}^{$2}$0
 endsnippet
 
-snippet intd "Integral" i
-\int_{$1}^{$2} $3 \,d$4 $0
-endsnippet
-
 snippet sum "Sum" i
 \sum_{$1}^{$2}$0
 endsnippet
 
-snippet prd "Product" i
+snippet prod "Product" i
 \prod_{$1}^{$2}$0
 endsnippet
 
-snippet cab "Cap" i
+snippet cap "Cap" i
 \bigcap_{$1}^{$2}$0
 endsnippet
 
-snippet cub "Cup" i
+snippet cup "Cup" i
 \bigcup_{$1}^{$2}$0
 endsnippet
 
@@ -84,110 +80,110 @@ snippet frac "Fractions" i
 \frac{$1}{$2}$0
 endsnippet
 
-snippet dfra "Fractions" i
+snippet dfrac "Fractions" i
 \dfrac{$1}{$2}$0
 endsnippet
 
-snippet cfra "Fractions" i
+snippet cfrac "Fractions" i
 \cfrac{$1}{$2}$0
 endsnippet
 
-snippet bin "Binomial" i
+snippet binom "Binomial" i
 \binom{$1}{$2}$0
 endsnippet
 
-snippet sec "Section" b
+snippet section "Section" b
 \section{$1}$0
 endsnippet
 
-snippet ssec "Subsection" b
+snippet ssection "Subsection" b
 \subsection{$1}$0
 endsnippet
 
-snippet sssec "Subsubsection" b
+snippet sssection "Subsubsection" b
 \subsubsection{$1}$0
 endsnippet
 
-snippet axi "Axiom" b
+snippet axiom "Axiom" b
 \begin{axiom}
 	$1
 \end{axiom}
 endsnippet
 
-snippet pro "Proposition" b
+snippet proposition "Proposition" b
 \begin{proposition}
 	$1
 \end{proposition}
 endsnippet
 
-snippet the "Theorem" b
+snippet theorem "Theorem" b
 \begin{theorem}
 	$1
 \end{theorem}
 endsnippet
 
-snippet lem "Lemma" b
+snippet lemma "Lemma" b
 \begin{lemma}
 	$1
 \end{lemma}
 endsnippet
 
-snippet cor "Corollary" b
+snippet corollary "Corollary" b
 \begin{corollary}
 	$1
 \end{corollary}
 endsnippet
 
-snippet def "Definition" b
+snippet definition "Definition" b
 \begin{definition}
 	$1
 \end{definition}
 $0
 endsnippet
 
-snippet prf "Proof" b
+snippet proof "Proof" b
 \begin{proof}
 	$1
 \end{proof}
 $0
 endsnippet
 
-snippet exa "Example" b
+snippet example "Example" b
 \begin{example}
 	$1
 \end{example}
 $0
 endsnippet
 
-snippet prb "Problem" b
+snippet problem "Problem" b
 \begin{problem}
 	$1
 \end{problem}
 $0
 endsnippet
 
-snippet sol "Solution" b
+snippet solution "Solution" b
 \begin{solution}
 	$1
 \end{solution}
 $0
 endsnippet
 
-snippet not "Note" b
+snippet note "Note" b
 \begin{note}
 	$1
 \end{note}
 $0
 endsnippet
 
-snippet rem "Remark" b
+snippet remark "Remark" b
 \begin{remark}
 	$1
 \end{remark}
 $0
 endsnippet
 
-snippet con "Conjecture" b
+snippet conjecture "Conjecture" b
 \begin{conjecture}
 	$1
 \end{conjecture}
