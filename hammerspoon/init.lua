@@ -53,6 +53,45 @@ do
 	hs.hotkey.bind('control','f13',changeIME)
 end
 
+do
+	local expand_window = function()
+		local window = hs.window.focusedWindow()
+		local frame = window:frame()
+		local screen = window:screen():frame()
+		frame.x = screen.x
+		frame.y = screen.y
+		frame.w = screen.w
+		frame.h = screen.h
+		window:setFrame(frame)
+	end
+
+	local expand_window_half_left = function()
+		local window = hs.window.focusedWindow()
+		local frame = window:frame()
+		local screen = window:screen():frame()
+		frame.x = screen.x
+		frame.y = screen.y
+		frame.w = screen.w / 2
+		frame.h = screen.h
+		window:setFrame(frame)
+	end
+
+	local expand_window_half_right = function()
+		local window = hs.window.focusedWindow()
+		local frame = window:frame()
+		local screen = window:screen():frame()
+		frame.x = screen.x + (screen.w / 2)
+		frame.y = screen.y
+		frame.w = screen.w / 2
+		frame.h = screen.h
+		window:setFrame(frame)
+	end
+
+	hs.hotkey.bind({'option','command','shift'}, '0', expand_window)
+	hs.hotkey.bind({'option','command','shift'}, '1', expand_window_half_left)
+	hs.hotkey.bind({'option','command','shift'}, '2', expand_window_half_right)
+end
+
 local input_source = hs.keycodes.currentSourceID()
 print(input_source)
 
