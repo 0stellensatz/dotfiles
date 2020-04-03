@@ -9,9 +9,23 @@ export PATH="/usr/local/sbin:$PATH"                        # Homebrew PATH
 
 export NOTE="$HOME/Documents/markdown/notes/"              # note dir (markdown)
 export MATH_NOTE="$HOME/Documents/tex/notes/math-notes"    # math note dir
+export PDF_VIEWER="Preview.app"       # pdf viewer
 
 export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
+
+export FZF_DEFAULT_COMMAND="fd"
+export FZF_CTRL_T_COMMAND="fd"
+export FZF_ALT_C_COMMAND="fd --type d"
+
+export FZF_DEFAULT_OPTS="--multi --inline-info --border
+--preview='(highlight -O ansi -l {} 2> /dev/null || tree -C {} || cat {}) 2> /dev/null | head -200'
+--bind=alt-a:select-all,alt-e:deselect-all,esc:ignore"
+export FZF_CTRL_T_OPTS="--height=50%"
+export FZF_CTRL_R_OPTS="--height=50%"
+export FZF_ALT_C_OPTS="--height=50%"
+
+export BAT_THEME="ansi-dark"
 
 set -o emacs                                               # emacs keymap
 plugins=(git)                                              # load git plugin
@@ -20,6 +34,7 @@ source $ZSH/oh-my-zsh.sh
 
 [[ -s /Users/loudcolour/.autojump/etc/profile.d/autojump.sh ]] && source /Users/loudcolour/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh                     # load fuzzy completion
 
 export ZPLUG_HOME=/usr/local/opt/zplug                     # zplug
 source $ZPLUG_HOME/init.zsh
@@ -31,3 +46,5 @@ zplug load
 
 alias vi="vim"                                             # vi as vim
 alias coin="echo 'head\ntail' | sort -R | head -1"         # shell flips coin for you
+alias note="cd $NOTE && vim \$(fzf) && cd -"
+alias mnote="cd $MATH_NOTE && vim \$(fd '.*\.(tex|md|log)$' | fzf) && cd -"
