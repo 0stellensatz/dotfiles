@@ -32,3 +32,14 @@ vnoremap j k
 nnoremap k j
 vnoremap k j
 
+" swap r and <C-r>
+
+nnoremap r <C-r>
+vnoremap r <C-r>
+nnoremap <C-r> r
+vnoremap <C-r> r
+
+" activate FZF
+
+nnoremap <C-t> :FZF<CR>
+
