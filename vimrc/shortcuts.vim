@@ -1,6 +1,10 @@
 " .vimrc.d
 
+command Settings :tabnew $DOTFILES/vimrc/editor.vim
+command SettingsPlugin :tabnew $DOTFILES/vimrc/plugins.vim
 command SettingsPluginConfig :tabnew $DOTFILES/vimrc/plugins-config.vim
+command SettingsShortcuts :tabnew $DOTFILES/vimrc/shortcuts.vim
+command LoadSettings :source ~/.vimrc
 
 " tex
 
