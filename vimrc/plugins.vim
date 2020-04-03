@@ -10,6 +10,7 @@ Plug 'junegunn/vim-peekaboo'
 Plug 'gorkunov/smartpairs.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/goyo.vim'
 
 " autocomplete
 
