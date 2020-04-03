@@ -1,9 +1,6 @@
 " .vimrc.d
 
-command Settings :vsp $DOTFILES/vimrc/editor.vim
-command SettingsPlugin :vsp $DOTFILES/vimrc/plugins.vim
-command SettingsPluginConfig :vsp $DOTFILES/vimrc/plugins-config.vim
-command SettingsShortcuts :vsp $DOTFILES/vimrc/shortcuts.vim
+command SettingsPluginConfig :tabnew $DOTFILES/vimrc/plugins-config.vim
 
 " tex
 
