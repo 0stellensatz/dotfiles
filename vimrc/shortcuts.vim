@@ -16,7 +16,12 @@ command ClearTeX :! rm %:r.aux %:r.log %:r.out %:r.dvi %:r.pdf
 
 command OpenPDF :! open %:r.pdf
 command Open :! open %
+command Reveal :! open -R %
 command PBcopy :! cat % | pbcopy
+
+" system
+
+command SudoSave :w !sudo tee > /dev/null %
 
 " swap ; and :
 
