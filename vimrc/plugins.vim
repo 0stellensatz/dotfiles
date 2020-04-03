@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 
 " editor
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install()} }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-peekaboo'
