@@ -6,22 +6,14 @@ do
 	-- key modification from option(right) to f13 by karabiner-elements is required.
 
 	local IME = {
+		system_colemak = "com.apple.keylayout.Colemak",
 		kotoeri_romaji = "com.apple.inputmethod.Kotoeri.Roman",
 		kotoeri_hiragana = "com.apple.inputmethod.Kotoeri.Japanese",
 		gureum_colemak = "org.youknowone.inputmethod.Gureum.colemak",
 		gureum_han390 = "org.youknowone.inputmethod.Gureum.han390",
+		russian = "org.sil.ukelele.keyboardlayout.interlingualcolemak.colemak-russian",
+		french = "org.sil.ukelele.keyboardlayout.interlingualcolemak.colemak-french"
 	}
-
-	local changeIME = function()
-	    local currentIME = hs.keycodes.currentSourceID()
-		local nextIME = nil
-		if currentIME == IME.gureum_colemak or currentIME == IME.gureum_han390 then
-			nextIME = IME.kotoeri_hiragana
-		else
-			nextIME = IME.gureum_han390
-		end
-		hs.keycodes.currentSourceID(nextIME)
-	end
 
 	local toggleAlphabet = function()
 		local currentIME = hs.keycodes.currentSourceID()
@@ -32,8 +24,14 @@ do
 			nextIME = IME.gureum_colemak
 		elseif currentIME == IME.kotoeri_romaji then
 			nextIME = IME.kotoeri_hiragana
-		else
+		elseif currentIME == IME.kotoeri_hiragana then
 			nextIME = IME.kotoeri_romaji
+		elseif currentIME == IME.russian then
+			nextIME = IME.system_colemak
+		elseif currentIME == IME.system_colemak then
+			nextIME = IME.russian
+		elseif currentIME == IME.french then
+			nextIME = ""
 		end
 		hs.keycodes.currentSourceID(nextIME)
 	end
@@ -44,13 +42,19 @@ do
 			hs.keycodes.currentSourceID(IME.gureum_colemak)
 		elseif currentIME == IME.kotoeri_hiragana then
 			hs.keycodes.currentSourceID(IME.kotoeri_romaji)
+		elseif currentIME == IME.russian then
+			hs.keycodes.currentSourceID(IME.system_colemak)
 		end
 		hs.eventtap.keyStroke({}, 'escape')
 	end
 
+	hs.hotkey.bind('shift','f2', function() hs.keycodes.currentSourceID(IME.gureum_han390) end)
+	hs.hotkey.bind('shift','f3', function() hs.keycodes.currentSourceID(IME.kotoeri_hiragana) end)
+	hs.hotkey.bind('shift','f4', function() hs.keycodes.currentSourceID(IME.french) end)
+	hs.hotkey.bind('shift','f5', function() hs.keycodes.currentSourceID(IME.russian) end)
+
 	hs.hotkey.bind('control','[',escVim)
 	hs.hotkey.bind('','f13',toggleAlphabet)
-	hs.hotkey.bind('control','f13',changeIME)
 end
 
 do
