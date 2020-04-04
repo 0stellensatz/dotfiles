@@ -77,8 +77,7 @@ By configuring from `about:config` on colour management, over-saturated colours
 can be corrected. ([Reference](https://cameratico.com/guides/firefox-color-management/))
 - Enable [DNS-over-HTTPS](https://support.mozilla.org/en-US/kb/firefox-dns-over-https)
 - Install Add-ons
-  - 1Password
-  - Adblock Plus
+  - 1Password X
   - DuckDuckGo Privacy Essentials
   - Enhancer for YouTube
   - Firefox Multi-Account Containers
