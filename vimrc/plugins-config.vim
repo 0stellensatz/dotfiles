@@ -10,7 +10,7 @@ colo seoul256
 
 " configuration for `Sirver/ultisnips`
 
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.vimrc.d/UltiSnips']
+let g:UltiSnipsSnippetDirectories=[$DOTFILES.'/vimrc/UltiSnips']
 
 let g:UltiSnipsExpandTrigger='<c-e>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'

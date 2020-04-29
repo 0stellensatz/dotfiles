@@ -19,6 +19,13 @@ command Open :! open %
 command Reveal :! open -R %
 command PBcopy :! cat % | pbcopy
 
+" markdown
+
+command MDGen :! python3 build.py
+command MDRegen :! python3 build.py regenerate
+command MDDebug :! python3 build.py debug
+command Browse :! open notes/%:t:r.html
+
 " system
 
 command SudoSave :w !sudo tee > /dev/null %
@@ -30,7 +37,7 @@ vnoremap ; :
 nnoremap : ;
 vnoremap : ;
 
-" swap j and k
+" swap j and k (for colemak layout)
 
 nnoremap j k
 vnoremap j k
