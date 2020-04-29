@@ -7,12 +7,13 @@ export GPG_TTY=$(tty)
 
 export PATH="/usr/local/sbin:$PATH"                        # Homebrew PATH
 
-export NOTE="$HOME/Documents/markdown/notes/"              # note dir (markdown)
-export MATH_NOTE="$HOME/Documents/tex/notes/math-notes"    # math note dir
-export PDF_VIEWER="Preview.app"       # pdf viewer
-
 export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
+
+export NOTE="$HOME/Documents/markdown/notes"              # note dir (markdown)
+export MATH_NOTE="$HOME/Documents/tex/notes/math-notes"    # math note dir
+export PUBLIC_NOTE="$REPO/loudcolour.github.io"
+export PDF_VIEWER="Preview.app"       # pdf viewer
 
 export FZF_DEFAULT_COMMAND="fd"
 export FZF_CTRL_T_COMMAND="fd"
@@ -22,10 +23,8 @@ export FZF_DEFAULT_OPTS="--multi --inline-info --border
 --preview='(highlight -O ansi -l {} 2> /dev/null || tree -C {} || cat {}) 2> /dev/null | head -200'
 --bind=alt-a:select-all,alt-e:deselect-all,esc:ignore"
 export FZF_CTRL_T_OPTS="--height=50%"
-export FZF_CTRL_R_OPTS="--height=50%"
+export FZF_CTRL_R_OPTS="--height=50% --preview-window=right:hidden"
 export FZF_ALT_C_OPTS="--height=50%"
-
-export BAT_THEME="ansi-dark"
 
 set -o emacs                                               # emacs keymap
 plugins=(git)                                              # load git plugin
@@ -44,7 +43,11 @@ zplug "zsh-users/zsh-autosuggestions"
 
 zplug load
 
+alias python="python3"                                     # force using python3
+alias pip="pip3"
 alias vi="vim"                                             # vi as vim
 alias coin="echo 'head\ntail' | sort -R | head -1"         # shell flips coin for you
 alias note="cd $NOTE && vim \$(fzf) && cd -"
 alias mnote="cd $MATH_NOTE && vim \$(fd '.*\.(tex|md|log)$' | fzf) && cd -"
+alias pnote="cd $PUBLIC_NOTE && vim \$(fd '.*\.(md)$' | fzf) && cd -"
+
