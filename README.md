@@ -67,7 +67,6 @@ Then install these plug-ins below.
 - markdownlint
 - Markdown+Math
 - Polacode
-- Vim
 
 ## Set up Firefox
 
