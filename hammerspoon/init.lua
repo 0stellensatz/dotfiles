@@ -15,8 +15,8 @@ do
 
 		ukelele_prefix = "org.sil.ukelele.keyboardlayout.interlingualcolemak",
 
-		russian = ".Colemak-Russian",
-		french = ".Colemak-French",
+		russian = ".colemak-russian",
+		french = ".colemak-french",
 	} 
 
 	local toggleAlphabet = function()
@@ -116,4 +116,5 @@ end
 hs.alert.defaultStyle["radius"] = 2
 hs.alert.defaultStyle["strokeWidth"] = 0
 
-hs.alert.show("Hammerspoon Reloaded!")
+hs.application.launchOrFocus('Hammerspoon')
+
