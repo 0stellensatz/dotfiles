@@ -31,11 +31,21 @@ use `preamble_en` or `preamble_ja` instead of
 ## Set up Vim
 
 1. Make symlink `.vimrc` linked to path to `$DOTFILES/vimrc` by
-`ln -s $DOTFILES/vimrc/vimrc ~/.vimrc`
+`ln -s $DOTFILES/vimrc/vimrc ~/.vimrc` for Vim.
+`ln -s $DOTFILES/vimrc/vimrc ~/.config/nvim/init.vim` for Neovim instead.
 2. Install `junegunn/vim-plug`  
 
-``` shell
+*Vim*
+
+```shell
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+*Neovim*
+
+```shell
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 

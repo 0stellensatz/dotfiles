@@ -43,10 +43,11 @@ zplug "zsh-users/zsh-autosuggestions"
 
 zplug load
 
-alias python="python3"                                     # force using python3
+alias python="python3"                             # force using python3
 alias pip="pip3"
-alias vi="vim"                                             # vi as vim
-alias coin="echo 'head\ntail' | sort -R | head -1"         # shell flips coin for you
+alias vi="nvim"                                    # vi as nvim
+alias vim="nvim"                                   # vim as nvim
+alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
 alias note="cd $NOTE && vim \$(fzf) && cd -"
 alias mnote="cd $MATH_NOTE && vim \$(fd '.*\.(tex|md|log)$' | fzf) && cd -"
 alias pnote="cd $PUBLIC_NOTE && vim \$(fd '.*\.(md)$' | fzf) && cd -"
