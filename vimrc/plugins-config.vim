@@ -19,4 +19,3 @@ let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 " configuration for `plasticboy/vim-markdown`
 
 let g:vim_markdown_math = 1
-
