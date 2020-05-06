@@ -13,10 +13,10 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
 
-" autocomplete
+" autocomplete, lints
+" CocInstall coc-ultisnips, coc-rls, coc-vimtex, coc-python,...
 
 Plug 'SirVer/ultisnips'
-Plug 'vim-syntastic/syntastic'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " git
