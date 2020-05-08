@@ -38,3 +38,6 @@ function! s:show_documentation()
 endfunction
 
 nmap <silent> <C-s> <Plug>(coc-cursors-position)
+
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"

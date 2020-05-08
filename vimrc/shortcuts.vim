@@ -39,10 +39,12 @@ vnoremap : ;
 
 " swap j and k (for colemak layout)
 
-nnoremap j k
-vnoremap j k
+nnoremap j h
+vnoremap j h
 nnoremap k j
 vnoremap k j
+nnoremap h k
+vnoremap h k
 
 " swap r and <C-r>
 
@@ -53,13 +55,12 @@ vnoremap <C-r> r
 
 " input mode arrow keys
 
-inoremap <C-h> <Left>
-inoremap <C-j> <Up>
-inoremap <C-k> <Down>
-inoremap <C-l> <Right>
+inoremap <C-f> <Left>
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
+inoremap <C-b> <Right>
 
 " activate FZF
 
 nnoremap <C-t> :FZF<CR>
-
 
