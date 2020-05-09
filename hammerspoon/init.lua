@@ -72,7 +72,6 @@ do
 
 	hs.hotkey.bind('control','[',escVim)
 	hs.hotkey.bind('','f13',toggleAlphabet)
-	hs.hotkey.bind('','f16',escVim)
 end
 
 do
