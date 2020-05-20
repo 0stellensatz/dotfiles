@@ -14,6 +14,7 @@ export DROPBOX="$HOME/Dropbox"
 export NOTE="$DROPBOX/markdown/notes"              # note dir (markdown)
 export MATH_NOTE="$DROPBOX/tex/notes/math-notes"    # math note dir
 export PUBLIC_NOTE="$REPO/loudcolour.github.io"
+export TODO="$DROPBOX/markdown/todos"
 export PDF_VIEWER="Preview.app"       # pdf viewer
 
 export FZF_DEFAULT_COMMAND="fd"
@@ -46,10 +47,10 @@ zplug load
 
 alias python="python3"                             # force using python3
 alias pip="pip3"
-alias vi="nvim"                                    # vi as nvim
-alias vim="nvim"                                   # vim as nvim
+
 alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
-alias note="cd $NOTE && vim \$(fzf) && cd -"
-alias mnote="cd $MATH_NOTE && vim \$(fd '.*\.(tex|md|log)$' | fzf) && cd -"
-alias pnote="cd $PUBLIC_NOTE && vim \$(fd '.*\.(md)$' | fzf) && cd -"
+alias note="cd $NOTE && nvim \$(fzf) && cd -"
+alias mnote="cd $MATH_NOTE && nvim \$(fd '.*\.(tex|md|log)$' | fzf) && cd -"
+alias pnote="cd $PUBLIC_NOTE && nvim \$(fd '.*\.(md)$' | fzf) && cd -"
+alias todo="cd $TODO && nvim \$(fzf) && cd -"
 

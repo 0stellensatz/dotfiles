@@ -57,14 +57,14 @@ do
 		hs.eventtap.keyStroke({}, 'escape')
 	end
 
-	hs.hotkey.bind('shift','f2', function() hs.keycodes.currentSourceID(IME.gureum_han390) end)
-	hs.hotkey.bind('shift','f3', function() hs.keycodes.currentSourceID(IME.kotoeri_hiragana) end)
-	hs.hotkey.bind('shift','f4', function() 
+	hs.hotkey.bind('','f2', function() hs.keycodes.currentSourceID(IME.gureum_han390) end)
+	hs.hotkey.bind('','f3', function() hs.keycodes.currentSourceID(IME.kotoeri_hiragana) end)
+	hs.hotkey.bind('','f4', function() 
 		if not hs.keycodes.currentSourceID(IME.ukelele_prefix..IME.french) then
 			hs.keycodes.currentSourceID(IME.ukelele_prefix..".keylayout"..IME.french)
 		end
 	end)
-	hs.hotkey.bind('shift','f5', function() 
+	hs.hotkey.bind('','f5', function() 
 		if not hs.keycodes.currentSourceID(IME.ukelele_prefix..IME.russian) then
 			hs.keycodes.currentSourceID(IME.ukelele_prefix..".keylayout"..IME.russian)
 		end
