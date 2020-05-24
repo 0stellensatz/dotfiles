@@ -33,11 +33,9 @@ plugins=(git)                                              # load git plugin
 
 source $ZSH/oh-my-zsh.sh
 
-[[ -s /Users/loudcolour/.autojump/etc/profile.d/autojump.sh ]] && source /Users/loudcolour/.autojump/etc/profile.d/autojump.sh
-autoload -U compinit && compinit -u
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh                     # load fuzzy completion
 
-export ZPLUG_HOME=/usr/local/opt/zplug                     # zplug
+export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh
 
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
