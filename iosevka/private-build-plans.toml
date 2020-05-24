@@ -1,8 +1,9 @@
 [buildPlans.iosevka-cherrypick]
 family = "Iosevka CherryPick"
 design = ["sans", "sp-fixed", "leading-1250",
-	      "cv08", "cv16", "cv24", "cv33",
-		  "cv38", "cv43", "cv51", "cv65"]
+		  "cv08", "cv69", "cv43", "cv51", "cv65",
+          "cv16", "cv45", "cv32", "cv38"]
+
 
 [buildPlans.iosevka-cherrypick.weights.regular]
 shape = 400
@@ -22,8 +23,8 @@ css   = 700
 [buildPlans.iosevka-cherrypick-slab]
 family = "Iosevka CherryPick Slab"
 design = ["slab", "sp-fixed", "leading-1250",
-	      "cv08", "cv16", "cv24", "cv33",
-		  "cv38", "cv43", "cv51", "cv65"]
+		  "cv08", "cv69", "cv43", "cv51", "cv65",
+          "cv16", "cv45", "cv32", "cv38"]
 
 [buildPlans.iosevka-cherrypick-slab.weights.regular]
 shape = 400
