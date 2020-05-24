@@ -23,7 +23,7 @@ export FZF_ALT_C_COMMAND="fd --type d"
 
 export FZF_DEFAULT_OPTS="--multi --inline-info --border
 --preview='(highlight -O ansi -l {} 2> /dev/null || tree -C {} || cat {}) 2> /dev/null | head -200'
---bind=alt-a:select-all,alt-e:deselect-all,esc:ignore"
+--bind=ctrl-/:select-all,ctrl-k:deselect-all,esc:ignore"
 export FZF_CTRL_T_OPTS="--height=50%"
 export FZF_CTRL_R_OPTS="--height=50% --preview-window=right:hidden"
 export FZF_ALT_C_OPTS="--height=50%"
@@ -53,4 +53,5 @@ alias note="cd $NOTE && nvim \$(fzf) && cd -"
 alias mnote="cd $MATH_NOTE && nvim \$(fd '.*\.(tex|md|log)$' | fzf) && cd -"
 alias pnote="cd $PUBLIC_NOTE && nvim \$(fd '.*\.(md)$' | fzf) && cd -"
 alias todo="cd $TODO && nvim \$(fzf) && cd -"
+alias spot="open \$(fzf)"
 
