@@ -8,9 +8,9 @@ command! LoadSettings :source ~/.vimrc
 
 " tex
 
-command! BuildL :! latex % && dvipdfmx %:r
-command! BuildP :! platex % && dvipdfmx %:r
-command! BuildX :! xelatex %
+command! BuildLaTeX :! latex % && dvipdfmx %:r
+command! BuildPLaTeX :! platex % && dvipdfmx %:r
+command! BuildXeLaTeX :! xelatex %
 
 command! ClearTeX :! rm %:r.aux %:r.log %:r.out %:r.dvi %:r.pdf
 
@@ -21,9 +21,9 @@ command! PBcopy :! cat % | pbcopy
 
 " markdown
 
-command! MDGen :! python3 build.py
-command! MDRegen :! python3 build.py regenerate
-command! MDDebug :! python3 build.py debug
+command! MDgen :! python3 build.py
+command! MDregen :! python3 build.py regenerate
+command! MDdebug :! python3 build.py debug
 command! Browse :! open notes/%:t:r.html
 
 " system
