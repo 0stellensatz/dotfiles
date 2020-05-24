@@ -13,7 +13,8 @@ This repository hosts my setting/preset files of these applications:
 ## Set up ZSH
 
 1. Install [Oh My ZSH!](https://ohmyz.sh/)
-1. Install [Zplug](https://github.com/zplug/zplug), [FZF](https://github.com/junegunn/fzf)
+1. Install [Zplug](https://github.com/zplug/zplug), then run `zplug install`
+1. Install [FZF](https://github.com/junegunn/fzf) w/ shell extensions for key bindings & fuzzy auto-complete.
 1. Make symlink `.zshrc` linked to path to `dotfiles/zshrc/zshrc` by
 `ln -s path/to/dotfiles/zshrc/zshrc ~/.zshrc`
 
