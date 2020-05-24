@@ -29,26 +29,13 @@ When using this preamble in English or Japanese document,
 use `preamble_en` or `preamble_ja` instead of
 `preamble_ko`.
 
-## Set up Vim
+## Set up Vim / Neovim
 
 1. Make symlink `.vimrc` linked to path to `$DOTFILES/vimrc` by
 `ln -s $DOTFILES/vimrc/vimrc ~/.vimrc` for Vim.
 `ln -s $DOTFILES/vimrc/vimrc ~/.config/nvim/init.vim` for Neovim instead.
-2. Install `junegunn/vim-plug`  
-
-*Vim*
-
-```shell
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-*Neovim*
-
-```shell
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
+2. Install [Vim-Plug](https://github.com/junegunn/vim-plug), then run `:PlugInstall`.
+3. Install [CoC](https://github.com/neoclide/coc.nvim) extensions.
 
 ## Set up iTerm 2
 
