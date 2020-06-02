@@ -55,10 +55,10 @@ vnoremap <C-r> r
 
 " input mode arrow keys
 
-inoremap <C-f> <Left>
+inoremap <C-f> <Right>
 inoremap <C-p> <Up>
 inoremap <C-n> <Down>
-inoremap <C-b> <Right>
+inoremap <C-b> <Left>
 
 " activate FZF
 
