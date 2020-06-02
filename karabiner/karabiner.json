@@ -42,7 +42,15 @@
                                 "key_code": "left_control"
                             },
                             "to": {
-                                "key_code": "caps_lock"
+                                "key_code": "fn"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "fn"
+                            },
+                            "to": {
+                                "key_code": "f16"
                             }
                         }
                     ]
@@ -71,7 +79,40 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": false,
-                    "simple_modifications": []
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "delete_forward"
+                            },
+                            "to": {
+                                "key_code": "power"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "escape"
+                            },
+                            "to": {
+                                "key_code": "grave_accent_and_tilde"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "grave_accent_and_tilde"
+                            },
+                            "to": {
+                                "key_code": "escape"
+                            }
+                        },
+                        {
+                            "from": {
+                                "key_code": "power"
+                            },
+                            "to": {
+                                "key_code": "delete_forward"
+                            }
+                        }
+                    ]
                 },
                 {
                     "disable_built_in_keyboard_if_exists": false,
