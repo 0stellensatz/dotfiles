@@ -133,42 +133,7 @@
     ],
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontSize": 13,
-    "vim.normalModeKeyBindings": [
-      {
-        "before": [";"],
-        "after": [":"]
-      },
-      {
-        "before": [":"],
-        "after": [";"]
-      },
-      {
-        "before": ["j"],
-        "after": ["k"]
-      },
-      {
-        "before": ["k"],
-        "after": ["j"]
-      }
-    ],
-    "vim.visualModeKeyBindings": [
-      {
-        "before": [";"],
-        "after": [":"]
-      },
-      {
-        "before": [":"],
-        "after": [";"]
-      },
-      {
-        "before": ["j"],
-        "after": ["k"]
-      },
-      {
-        "before": ["k"],
-        "after": ["j"]
-      }
-    ],
     "latex-workshop.latex.recipe.default": "lastUsed",
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "mdmath.delimiters": ""
 }
