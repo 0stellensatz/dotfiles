@@ -1,7 +1,7 @@
 hs.hotkey.bind({'control','command'},'H',hs.reload)
 hs.hotkey.bind({'control','command'},'A',function() hs.application.launchOrFocus('Activity Monitor') end)
 hs.hotkey.bind('','f10',function() hs.application.launchOrFocus('iTerm') end)
-hs.hotkey.bind('shift','f10',function() hs.alert.show(hs.keycodes.currentSourceID() ) end)
+hs.hotkey.bind('shift','f10',function() hs.alert.show(hs.keycodes.currentSourceID()) end)
 
 do
 	-- key modification from option(right) to f13 by karabiner-elements is required.
@@ -126,6 +126,38 @@ do
 	hs.hotkey.bind({'command','shift'}, '0', expand_window)
 	hs.hotkey.bind({'command','shift'}, '1', expand_window_half_left)
 	hs.hotkey.bind({'command','shift'}, '2', expand_window_half_right)
+end
+
+do
+	control_w = hs.hotkey.new({'control'}, 'W', function() hs.eventtap.keyStroke('option', 'delete') end)
+	control_h = hs.hotkey.new({'control'}, 'H', function() hs.eventtap.keyStroke('', 'delete') end)
+	control_n = hs.hotkey.new({'control'}, 'N', function() hs.eventtap.keyStroke('', 'down') end)
+	control_p = hs.hotkey.new({'control'}, 'P', function() hs.eventtap.keyStroke('', 'up') end)
+	control_f = hs.hotkey.new({'control'}, 'F', function() hs.eventtap.keyStroke('', 'right') end)
+	control_b = hs.hotkey.new({'control'}, 'B', function() hs.eventtap.keyStroke('', 'left') end)
+
+	local emacs_emul_on = function()
+		control_w:enable()
+		control_h:enable()
+		control_n:enable()
+		control_p:enable()
+		control_f:enable()
+		control_b:enable()
+		hs.alert.show('Emacs Emulation ON')
+	end
+	
+	local emacs_emul_off = function()
+		control_w:disable()
+		control_h:disable()
+		control_n:disable()
+		control_p:disable()
+		control_f:disable()
+		control_b:disable()
+		hs.alert.show('Emacs Emulation OFF')
+	end
+
+	hs.hotkey.bind({'control', 'command'}, '[', emacs_emul_on)
+	hs.hotkey.bind({'control', 'command'}, ']', emacs_emul_off)
 end
 
 hs.alert.defaultStyle["radius"] = 2
