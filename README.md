@@ -12,11 +12,11 @@ This repository hosts my setting/preset files of these applications:
 
 ## Set up ZSH
 
+1. Make symlink `.zshrc` linked to path to `dotfiles/zshrc/zshrc` by
+`ln -s path/to/dotfiles/zshrc/zshrc ~/.zshrc`
 1. Install [Oh My ZSH!](https://ohmyz.sh/)
 1. Install [Zplug](https://github.com/zplug/zplug), then run `zplug install`
 1. Install [FZF](https://github.com/junegunn/fzf) w/ shell extensions for key bindings & fuzzy auto-complete.
-1. Make symlink `.zshrc` linked to path to `dotfiles/zshrc/zshrc` by
-`ln -s path/to/dotfiles/zshrc/zshrc ~/.zshrc`
 
 Variable for `path/to/dotfiles` is set on `.zshrc`, which means accessing `path/to/dotfiles`
 by `$DOTFILES` is available for further steps.
