@@ -1,15 +1,5 @@
 # .files
 
-This repository hosts my setting/preset files of these applications:
-
-- ZSH
-- LaTeX
-- Vim
-- VS Code
-- iTerm 2
-- Karabiner-Elements
-- Firefox
-
 ## Set up ZSH
 
 1. Make symlink `.zshrc` linked to path to `dotfiles/zshrc/zshrc` by
