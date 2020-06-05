@@ -34,8 +34,9 @@ use `preamble_en` or `preamble_ja` instead of
 1. Make symlink `.vimrc` linked to path to `$DOTFILES/vimrc` by
 `ln -s $DOTFILES/vimrc/vimrc ~/.vimrc` for Vim.
 `ln -s $DOTFILES/vimrc/vimrc ~/.config/nvim/init.vim` for Neovim instead.
-2. Install [Vim-Plug](https://github.com/junegunn/vim-plug), then run `:PlugInstall`.
-3. Install [CoC](https://github.com/neoclide/coc.nvim) extensions.
+1. For Neovim, install `pynvim` with pip by `pip install pynvim`.
+1. Install [Vim-Plug](https://github.com/junegunn/vim-plug), then run `:PlugInstall`.
+1. Install [CoC](https://github.com/neoclide/coc.nvim) extensions.
 
 ## Set up iTerm 2
 
