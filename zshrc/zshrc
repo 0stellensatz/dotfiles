@@ -50,6 +50,5 @@ alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
 alias note="cd $NOTE && nvim \$(fzf) && cd -"
 alias mnote="cd $MATH_NOTE && nvim \$(fd '.*\.(tex|md|log)$' | fzf) && cd -"
 alias pnote="cd $PUBLIC_NOTE && nvim \$(fd '.*\.(md)$' | fzf) && cd -"
-alias todo="cd $TODO && nvim \$(fzf) && cd -"
 alias spot="open \$(fzf)"
 
