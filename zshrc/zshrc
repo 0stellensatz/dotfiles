@@ -9,12 +9,11 @@ export PATH="/usr/local/sbin:$PATH"                        # Homebrew PATH
 
 export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
-export DROPBOX="$HOME/Dropbox"
+export WORKBENCH="$HOME/workbench"
 
-export NOTE="$DROPBOX/markdown/notes"              # note dir (markdown)
-export MATH_NOTE="$DROPBOX/tex/notes/math-notes"    # math note dir
+export NOTE="$WORKBENCH/markdown/notes"              # note dir (markdown)
+export MATH_NOTE="$WORKBENCH/tex/notes/math-notes"    # math note dir
 export PUBLIC_NOTE="$REPO/loudcolour.github.io"
-export TODO="$DROPBOX/markdown/todos"
 export PDF_VIEWER="Preview.app"       # pdf viewer
 
 export FZF_DEFAULT_COMMAND="fd"
