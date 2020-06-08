@@ -50,4 +50,5 @@ alias note="cd $NOTE && nvim \$(fzf) && cd -"
 alias mnote="cd $MATH_NOTE && nvim \$(fd '.*\.(tex|md|log)$' | fzf) && cd -"
 alias pnote="cd $PUBLIC_NOTE && nvim \$(fd '.*\.(md)$' | fzf) && cd -"
 alias spot="open \$(fzf)"
+alias lch="cd /Applications && open \"\$(exa -1 | fzf)\" && cd -"
 
