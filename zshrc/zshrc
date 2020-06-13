@@ -11,8 +11,7 @@ export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
 export WORKBENCH="$HOME/workbench"
 
-export NOTE="$WORKBENCH/notes"              # note dir (markdown)
-export PUBLIC_NOTE="$REPO/loudcolour.github.io"
+export NOTE="$REPO/loudcolour.github.io"
 export PDF_VIEWER="Preview.app"       # pdf viewer
 
 export FZF_DEFAULT_COMMAND="fd"
@@ -45,8 +44,7 @@ alias python="python3"                             # force using python3
 alias pip="pip3"
 
 alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
-alias note="cd $NOTE && nvim \$(fzf) && cd -"
-alias pnote="cd $PUBLIC_NOTE && nvim \$(fd '.*\.(md)$' | fzf) && cd -"
+alias note="cd $NOTE && nvim \$(fd '.*\.(md)$' | fzf) && cd -"
 alias spot="open \$(fzf)"
 alias lch="cd /Applications && open \"\$(exa -1 | fzf)\" && cd -"
 
