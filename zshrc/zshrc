@@ -11,8 +11,7 @@ export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
 export WORKBENCH="$HOME/workbench"
 
-export NOTE="$WORKBENCH/markdown/notes"              # note dir (markdown)
-export MATH_NOTE="$WORKBENCH/tex/notes/math-notes"    # math note dir
+export NOTE="$WORKBENCH/notes"              # note dir (markdown)
 export PUBLIC_NOTE="$REPO/loudcolour.github.io"
 export PDF_VIEWER="Preview.app"       # pdf viewer
 
@@ -47,7 +46,6 @@ alias pip="pip3"
 
 alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
 alias note="cd $NOTE && nvim \$(fzf) && cd -"
-alias mnote="cd $MATH_NOTE && nvim \$(fd '.*\.(tex|md|log)$' | fzf) && cd -"
 alias pnote="cd $PUBLIC_NOTE && nvim \$(fd '.*\.(md)$' | fzf) && cd -"
 alias spot="open \$(fzf)"
 alias lch="cd /Applications && open \"\$(exa -1 | fzf)\" && cd -"
