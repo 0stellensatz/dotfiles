@@ -7,8 +7,8 @@ do
 	-- key modification from option(right) to f13 by karabiner-elements is required.
 
 	local IME = {
-		kotoeri_romaji = "com.apple.inputmethod.Kotoeri.Roman",
-		kotoeri_hiragana = "com.apple.inputmethod.Kotoeri.Japanese",
+		kotoeri_romaji = "com.google.inputmethod.Japanese.Roman",
+		kotoeri_hiragana = "com.google.inputmethod.Japanese.base",
 		system_colemak = "com.apple.keylayout.Colemak",
 		gureum_han390 = "org.youknowone.inputmethod.Gureum.han390",
 	} 
