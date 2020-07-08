@@ -61,7 +61,17 @@
 \newcommand{\SetC}{\mathbb{C}}
 \newcommand{\SetF}{\mathbb{F}}
 
-\theoremstyle{plain}
+\newtheoremstyle{cjkplain}% name
+{3pt}% space above
+{3pt}% space below
+{\upshape}% body font
+{}% indent amount
+{\bfseries}% theorem head font
+{.}% punctuation after theorem head
+{.5em}% space after theorem head
+{}% theorem head spec (can be left empty, meaning `normal')
+
+\theoremstyle{cjkplain}
 
 \newtheorem{theorem}{\termTheorem}[section]
 \newtheorem{axiom}{\termAxiom}[section]
