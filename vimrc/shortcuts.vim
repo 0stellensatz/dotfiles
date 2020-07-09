@@ -19,13 +19,6 @@ command! Open :! open %
 command! Reveal :! open -R %
 command! PBcopy :! cat % | pbcopy
 
-" markdown
-
-command! MDgen :! python3 build.py
-command! MDregen :! python3 build.py regenerate
-command! MDdebug :! python3 build.py debug
-command! Browse :! open notes/%:t:r.html
-
 " system
 
 command! SudoSave :w !sudo tee > /dev/null %
