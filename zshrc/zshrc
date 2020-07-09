@@ -11,7 +11,7 @@ export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
 export WORKBENCH="$HOME/workbench"
 
-export NOTE="$REPO/loudcolour.github.io"
+export NOTE="$REPO/notes"
 export PDF_VIEWER="Preview.app"       # pdf viewer
 
 export FZF_DEFAULT_COMMAND="fd"
