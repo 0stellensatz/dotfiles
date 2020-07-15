@@ -11,7 +11,7 @@ export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
 export WORKBENCH="$HOME/workbench"
 
-export NOTE="$REPO/notes"
+export NOTE="$WORKBENCH/notes"
 export PDF_VIEWER="Preview.app"       # pdf viewer
 
 export FZF_DEFAULT_COMMAND="fd"
@@ -44,7 +44,6 @@ alias python="python3"                             # force using python3
 alias pip="pip3"
 
 alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
-alias note="cd $NOTE && nvim \$(fd '.*\.(md)$' | fzf) && cd -"
 alias spot="open \$(fzf)"
 alias lch="cd /Applications && open \"\$(exa -1 | fzf)\" && cd -"
 
