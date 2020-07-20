@@ -12,9 +12,14 @@ command! BuildLaTeX :! latex % && dvipdfmx %:r
 command! BuildPLaTeX :! platex % && dvipdfmx %:r
 command! BuildXeLaTeX :! xelatex %
 
+command! MainLaTeX :! latex main.tex && dvipdfmx main
+command! MainPLaTeX :! platex main.tex && dvipdfmx main
+command! MainXeLaTeX :! xelatex main.tex
+
 command! ClearTeX :! rm %:r.aux %:r.log %:r.out %:r.dvi %:r.pdf
 
 command! OpenPDF :! open %:r.pdf
+command! OpenMain :! open main.pdf
 command! Open :! open %
 command! Reveal :! open -R %
 command! PBcopy :! cat % | pbcopy
