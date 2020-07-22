@@ -13,6 +13,7 @@
 \usepackage{mathtools}
 \usepackage{tikz}
 \usepackage{tikz-cd}
+\usepackage{mdframed}
 
 \usepackage{url}
 \usepackage{fancyhdr}
@@ -65,14 +66,33 @@
 
 \theoremstyle{plain}
 
-\newtheorem{theorem}{\termTheorem}[section]
-\newtheorem{axiom}{\termAxiom}[section]
+\newtheorem{theoremnobox}{\termTheorem}[section]
+\newtheorem{axiomnobox}{\termAxiom}[section]
+\newtheorem{conjecturenobox}{\termConjecture}[section]
+\newtheorem{lemmanobox}[theoremnobox]{\termLemma}
+\newtheorem{propositionnobox}[theoremnobox]{\termProposition}
 
-\newtheorem{lemma}[theorem]{\termLemma}
-\newtheorem{conjecture}[theorem]{\termConjecture}
-\newtheorem{proposition}[theorem]{\termProposition}
+\newtheorem{corollarynobox}{\termCorollary}[theoremnobox]
 
-\newtheorem{corollary}{\termCorollary}[theorem]
+\newenvironment{theorem}
+{\begin{mdframed}\begin{theoremnobox}}
+{\end{theoremnobox}\end{mdframed}}
+\newenvironment{axiom}
+{\begin{mdframed}\begin{axiomnobox}}
+{\end{axiomnobox}\end{mdframed}}
+\newenvironment{lemma}
+{\begin{mdframed}\begin{lemmanobox}}
+{\end{lemmanobox}\end{mdframed}}
+\newenvironment{conjecture}
+{\begin{mdframed}\begin{conjecturenobox}}
+{\end{conjecturenobox}\end{mdframed}}
+\newenvironment{proposition}
+{\begin{mdframed}\begin{propositionnobox}}
+{\end{propositionnobox}\end{mdframed}}
+
+\newenvironment{corollary}
+{\begin{mdframed}\begin{corollarynobox}}
+{\end{corollarynobox}\end{mdframed}}
 
 \theoremstyle{definition}
 
