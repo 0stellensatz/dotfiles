@@ -1,0 +1,7 @@
+[user]
+    email = loudclr@gmail.com
+    name = S. Hyeon
+    signingkey = E32A72F26D87BF7FF0D62DF806A69D574CA84A1C
+
+[commit]
+    gpgsign = true

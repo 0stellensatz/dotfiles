@@ -47,3 +47,5 @@ alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
 alias spot="open \$(fzf)"
 alias lch="cd /Applications && open \"\$(exa -1 | fzf)\" && cd -"
 
+alias pbcopyl='xclip -selection clipboard'
+alias pbpastel='xclip -selection clipboard -o'
