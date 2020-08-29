@@ -24,6 +24,11 @@ command! Open :! open %
 command! Reveal :! open -R %
 command! PBcopy :! cat % | pbcopy
 
+command! LOpenPDF :! xdg-open %:r.pdf
+command! LOpenMain :! xdg-open main.pdf
+command! LOpen :! xdg-open %
+command! PBcopyL :! cat % | xclip -selection clipboard
+
 " system
 
 command! SudoSave :w !sudo tee > /dev/null %

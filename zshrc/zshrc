@@ -9,7 +9,7 @@ export PATH="/usr/local/sbin:$PATH"                        # Homebrew PATH
 
 export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
-export WORKBENCH="$HOME/workbench"
+export WORKBENCH="$HOME/Dropbox"
 
 export NOTE="$WORKBENCH/notes"
 export PDF_VIEWER="Preview.app"       # pdf viewer
