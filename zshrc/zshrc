@@ -35,6 +35,8 @@ source $ZSH/oh-my-zsh.sh
 export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh
 
+source $HOME/.cargo/env
+
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
 
