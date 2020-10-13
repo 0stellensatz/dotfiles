@@ -31,7 +31,7 @@ command! PBcopyL :! cat % | xclip -selection clipboard
 
 " system
 
-command! SudoSave :w !sudo tee > /dev/null %
+command! SudoWrite :w !sudo tee %
 
 " swap ; and :
 

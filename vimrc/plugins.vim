@@ -46,5 +46,10 @@ Plug 'vim-ruby/vim-ruby'
 " theme, colorscheme
 
 Plug 'junegunn/seoul256.vim'
+
+" system
+
+Plug 'lambdalisue/suda.vim'
+
 call plug#end()
 
