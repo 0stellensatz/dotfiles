@@ -47,9 +47,5 @@ Plug 'vim-ruby/vim-ruby'
 
 Plug 'junegunn/seoul256.vim'
 
-" system
-
-Plug 'lambdalisue/suda.vim'
-
 call plug#end()
 
