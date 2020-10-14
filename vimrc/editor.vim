@@ -39,6 +39,8 @@ set statusline+=%f
 set statusline+=\ (%{strlen(&fenc)?&fenc:'none'})
 set statusline+=\ 
 
+set ttimeoutlen=5
+
 " visual mode
 
 set virtualedit=block
