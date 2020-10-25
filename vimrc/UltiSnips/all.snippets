@@ -33,8 +33,8 @@ snippet time "Time" i
 `date +%T`
 endsnippet
 
-snippet datetime "Date and Time" i
-`date +"%F %T"`
+snippet dt "Date and Time" i
+`date +"%F %T %z"`
 endsnippet
 
 snippet uts "Unix Timestamp" i
@@ -50,4 +50,14 @@ endsnippet
 
 snippet documentclass "Doucument Class" b
 \documentclass{$0}
+endsnippet
+
+snippet frontm "Front Matter" bi
+---
+layout: post
+title: "$1"
+date: `date +"%F %T %z"`
+categories: $2
+---
+$0
 endsnippet
