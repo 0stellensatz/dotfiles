@@ -46,8 +46,6 @@ alias python="python3"                             # force using python3
 alias pip="pip3"
 
 alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
-alias spot="open \$(fzf)"
-alias spotl="xdg-open \$(fzf)"
 
 alias pbcopyl='xclip -selection clipboard'
 alias pbpastel='xclip -selection clipboard -o'
