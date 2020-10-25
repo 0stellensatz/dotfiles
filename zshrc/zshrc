@@ -8,11 +8,8 @@ export GPG_TTY=$(tty)
 export PATH="/usr/local/sbin:$PATH"                        # Homebrew PATH
 
 export REPO="$HOME/repo"                                   # repository dir
-export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
-export WORKBENCH="$HOME/Dropbox"
-
-export NOTE="$WORKBENCH/notes"
-export PDF_VIEWER="Preview.app"       # pdf viewer
+export DOTFILES="$REPO/dotfiles"                      # dotfiles dir
+export NOTES="$REPO/notes"
 
 export FZF_DEFAULT_COMMAND="fd"
 export FZF_CTRL_T_COMMAND="fd"
