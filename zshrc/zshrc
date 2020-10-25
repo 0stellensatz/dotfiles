@@ -9,14 +9,11 @@ export PATH="/usr/local/sbin:$PATH"                        # Homebrew PATH
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 
 export REPO="$HOME/repo"                                   # repository dir
-export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
-export WORKBENCH="$HOME/Dropbox"
+export DOTFILES="$REPO/dotfiles"                      # dotfiles dir
+export NOTES="$REPO/notes"
 
-export NOTE="$WORKBENCH/notes"
-export PDF_VIEWER="Preview.app"       # pdf viewer
-
-export FZF_DEFAULT_COMMAND="fd"
-export FZF_CTRL_T_COMMAND="fd"
+export FZF_DEFAULT_COMMAND="fd -I"
+export FZF_CTRL_T_COMMAND="fd -I"
 export FZF_ALT_C_COMMAND="fd --type d"
 
 export FZF_DEFAULT_OPTS="--multi --inline-info --border
@@ -47,8 +44,6 @@ alias python="python3"                             # force using python3
 alias pip="pip3"
 
 alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
-alias spot="open \$(fzf)"
-alias spotl="xdg-open \$(fzf)"
 
 alias pbcopyl='xclip -selection clipboard'
 alias pbpastel='xclip -selection clipboard -o'
