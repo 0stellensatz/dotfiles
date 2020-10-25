@@ -6,6 +6,7 @@ export LANG=en_US.UTF-8                                    # locale
 export GPG_TTY=$(tty)
 
 export PATH="/usr/local/sbin:$PATH"                        # Homebrew PATH
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 
 export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$HOME/repo/dotfiles"                      # dotfiles dir
