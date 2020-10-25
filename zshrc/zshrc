@@ -11,8 +11,8 @@ export REPO="$HOME/repo"                                   # repository dir
 export DOTFILES="$REPO/dotfiles"                      # dotfiles dir
 export NOTES="$REPO/notes"
 
-export FZF_DEFAULT_COMMAND="fd"
-export FZF_CTRL_T_COMMAND="fd"
+export FZF_DEFAULT_COMMAND="fd -I"
+export FZF_CTRL_T_COMMAND="fd -I"
 export FZF_ALT_C_COMMAND="fd --type d"
 
 export FZF_DEFAULT_OPTS="--multi --inline-info --border
