@@ -48,16 +48,3 @@ snippet box "Box"
 $0
 endsnippet
 
-snippet documentclass "Doucument Class" b
-\documentclass{$0}
-endsnippet
-
-snippet frontm "Front Matter" bi
----
-layout: post
-title: "$1"
-date: `date +"%F %T %z"`
-categories: $2
----
-$0
-endsnippet

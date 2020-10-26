@@ -1,8 +1,29 @@
+snippet preko "Preamble (ko)" b
+\documentclass[10pt,a4paper]{oblivoir}
+
+\input{$DOTFILES/latex_preamble/preamble_ko.tex}
+
+\usepackage{fapapersize}
+\usefapapersize{*,*,25mm,*,25mm,*}
+
+\title{$1}
+\author{S. Hyeon}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+$0
+
+\end{document}
+endsnippet
+
+
 snippet block "\begin{} / \end{}" i
 \begin{$1}
 	$2
-\end{$1}
-$0
+\end{$1}$0
 endsnippet
 
 snippet textbf "Bold" i
@@ -20,8 +41,7 @@ endsnippet
 snippet equation "\[\]" b
 \[
 	$1
-\]
-$0
+\]$0
 endsnippet
 
 snippet sup "Sup" i
@@ -138,54 +158,46 @@ snippet definition "Definition" b
 \begin{definition}
 	$1
 \end{definition}
-$0
 endsnippet
 
 snippet proof "Proof" b
 \begin{proof}
 	$1
 \end{proof}
-$0
 endsnippet
 
 snippet example "Example" b
 \begin{example}
 	$1
 \end{example}
-$0
 endsnippet
 
 snippet problem "Problem" b
 \begin{problem}
 	$1
 \end{problem}
-$0
 endsnippet
 
 snippet solution "Solution" b
 \begin{solution}
 	$1
 \end{solution}
-$0
 endsnippet
 
 snippet note "Note" b
 \begin{note}
 	$1
 \end{note}
-$0
 endsnippet
 
 snippet remark "Remark" b
 \begin{remark}
 	$1
 \end{remark}
-$0
 endsnippet
 
 snippet conjecture "Conjecture" b
 \begin{conjecture}
 	$1
 \end{conjecture}
-$0
 endsnippet
