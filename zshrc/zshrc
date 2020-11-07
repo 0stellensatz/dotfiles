@@ -51,3 +51,7 @@ alias pbpastel='xclip -selection clipboard -o'
 alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 
+alias bak_macos_app="exa -l /Applications > \$(date +%F).txt"
+alias bak_pacman_list="pacman -Qqe > pkglist-\$(date +%F).txt"
+alias bak_pacman_foreign="pacman -Qqem > pkglist-foreign-\$(date +%F).txt"
+alias bak_pacman_db="tar -cjvf pacman_database-\$(date +%F).tar.bz2 /var/lib/pacman/local"
