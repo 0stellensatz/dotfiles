@@ -32,11 +32,6 @@ use `preamble_en` or `preamble_ja` instead of
 
 Just import json file to iTerm 2. That's it. 😉
 
-## Set up Karabiner-Elements
-
-Make symlink `karabiner.json` linked to path to `$DOTFILES/karabiner/karabiner.json` by
-`ln -s $DOTFILES/karabiner/karabiner.json ~/.config/karabiner/karabiner.json`
-
 ## Set up Hammerspoon
 
 Make symlink `init.lua` linked to path to `$DOTFILES/hammerspoon/init.lua` by
@@ -72,10 +67,8 @@ can be corrected. ([Reference](https://cameratico.com/guides/firefox-color-manag
   - Firefox Multi-Account Containers
   - Grammarly
   - HTTPS Everywhere
-  - Keybase
   - Mailvelope
   - Popup Blocker
-  - Search by Image
   - Web Archives
   - Tab2QR
 - Connect Mailvelope to GnuPG
