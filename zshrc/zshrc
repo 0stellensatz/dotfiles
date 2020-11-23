@@ -1,21 +1,18 @@
-export ZSH="$HOME/.oh-my-zsh"                              # oh-my-zsh installation
-ZSH_THEME="dragon"                                         # zsh theme
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME="dragon"
 
-export SAGE_ROOT="$HOME/sage-8.3"                          # root dir of sage
-export LANG=en_US.UTF-8                                    # locale
+export LANG=en_US.UTF-8
 export GPG_TTY=$(tty)
-
-export PATH="/usr/local/sbin:$PATH"                        # Homebrew PATH
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
-
-export REPO="$HOME/repo"                                   # repository dir
-export DOTFILES="$REPO/dotfiles"                      # dotfiles dir
+export REPO="$HOME/repo"
+export DOTFILES="$REPO/dotfiles"
 export NOTES="$REPO/notes"
 
 export FZF_DEFAULT_COMMAND="fd -I"
 export FZF_CTRL_T_COMMAND="fd -I"
 export FZF_ALT_C_COMMAND="fd --type d"
-
 export FZF_DEFAULT_OPTS="--multi --inline-info --border
 --preview='(highlight -O ansi -l {} 2> /dev/null || tree -C {} || cat {}) 2> /dev/null | head -200'
 --bind=ctrl-/:select-all,ctrl-k:deselect-all,esc:ignore"
@@ -23,34 +20,28 @@ export FZF_CTRL_T_OPTS="--height=50%"
 export FZF_CTRL_R_OPTS="--height=50% --preview-window=right:hidden"
 export FZF_ALT_C_OPTS="--height=50%"
 
-set -o emacs                                               # emacs keymap
-plugins=(git)                                              # load git plugin
+set -o emacs
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh                     # load fuzzy completion
-
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export ZPLUG_HOME=$HOME/.zplug
 source $ZPLUG_HOME/init.zsh
-
 source $HOME/.cargo/env
 
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
-
 zplug load
 
-alias python="python3"                             # force using python3
-alias pip="pip3"
-
 alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
-
 alias pbcopyl='xclip -selection clipboard'
 alias pbpastel='xclip -selection clipboard -o'
 
 alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
 
+alias bak_brew="brew list -1 > brew-\$(date +%F).txt"
+alias bak_brew_cask="brew list --cask > brew-cask-\$(date +%F).txt"
 alias bak_macos_app="exa -l /Applications > \$(date +%F).txt"
 alias bak_pacman_list="pacman -Qqe > pkglist-\$(date +%F).txt"
 alias bak_pacman_foreign="pacman -Qqem > pkglist-foreign-\$(date +%F).txt"
