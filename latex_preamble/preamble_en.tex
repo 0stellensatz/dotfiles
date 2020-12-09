@@ -76,6 +76,7 @@
 \newtheorem{conjecturenobox}{\termConjecture}[section]
 \newtheorem{lemmanobox}[theoremnobox]{\termLemma}
 \newtheorem{propositionnobox}[theoremnobox]{\termProposition}
+\newtheorem{problemnobox}{\termProblem}[section]
 
 \newtheorem{corollarynobox}{\termCorollary}[theoremnobox]
 
@@ -94,6 +95,9 @@
 \newenvironment{proposition}
 {\begin{mdframed}\begin{propositionnobox}}
 {\end{propositionnobox}\end{mdframed}}
+\newenvironment{problem}
+{\begin{mdframed}\begin{problemnobox}}
+{\end{problemnobox}\end{mdframed}}
 
 \newenvironment{corollary}
 {\begin{mdframed}\begin{corollarynobox}}
@@ -102,9 +106,8 @@
 \theoremstyle{definition}
 
 \newtheorem{definition}{\termDefinition}[section]
-\newtheorem{problem}{\termProblem}[section]
 
-\newtheorem{solution}{\termSolution}[problem]
+\newtheorem{solution}{\termSolution}[problemnobox]
 
 \newtheorem*{example}{\termExample}
 
@@ -114,3 +117,4 @@
 \newtheorem*{remark}{\termRemark}
 
 \renewcommand\qedsymbol{$\square$}
+
