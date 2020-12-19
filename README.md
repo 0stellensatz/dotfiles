@@ -40,7 +40,9 @@ Make symlink `init.lua` linked to path to `$DOTFILES/hammerspoon/init.lua` by
 ## Set up Visual Studio Code
 
 Make symlink `~/.config/Code\ -\ OSS/User/settings.json` linked to path to `$DOTFILES/vscode/settings.json`
-by `ln -s $DOTFILES/vscode/settings.json ~/.config/Code\ -\ OSS/User/settings.json`.
+by `ln -s $DOTFILES/vscode/settings.json ~/.config/Code\ -\ OSS/User/settings.json`,
+and make symlink `~/.config/Code\ -\ OSS/User/snippets` linked to path to
+`$DOTFILES/vscode/snippets` by `ln -s $DOTFILES/vscode/snippets ~/.config/Code\ -\ OSS/User/snippets`
 Then, install these plug-ins below.
 
 - CodeLLDB
