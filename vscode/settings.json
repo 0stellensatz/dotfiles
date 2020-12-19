@@ -3,9 +3,9 @@
 
   "editor.fontFamily": "Iosevka Cherrypick",
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.smoothScrolling": true,
+  "editor.smoothScrolling": false,
   "editor.wordWrap": "on",
-  "editor.tabCompletion": true,
+  "editor.tabCompletion": "on",
   "editor.fontSize": 15,
   "editor.fontWeight": "400",
   "editor.rulers": [ 80, 120 ],
