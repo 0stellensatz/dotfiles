@@ -61,7 +61,7 @@ can be corrected. ([Reference](https://cameratico.com/guides/firefox-color-manag
 - Enable [DNS-over-HTTPS](https://support.mozilla.org/en-US/kb/firefox-dns-over-https)
 - Enable [Encrypted SNI](https://blog.cloudflare.com/encrypted-sni/)
 - Install Add-ons, 1Password/1Password X, DuckDuckGo Privacy Essentials, Enhancer for YouTube,
-  Firefox Multi-Account Containers, Grammarly, Mailvelope, Popup Blocker, Web Archives, Tab2QR, etc.
+  Firefox Multi-Account Containers, Grammarly, Mailvelope, Popup Blocker, etc.
 - Connect Mailvelope to GnuPG
 - Import bookmarks
 
