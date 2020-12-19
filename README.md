@@ -21,7 +21,7 @@ use `preamble_en` or `preamble_ja` instead of
 
 ## Set up Vim / Neovim
 
-1. Make symlink `.vimrc` linked to path to `$DOTFILES/vimrc` by
+1. Make symlink `.vimrc` linked to path to `$DOTFILES/vimrc/vimrc` by
 `ln -s $DOTFILES/vimrc/vimrc ~/.vimrc` for Vim.
 `ln -s $DOTFILES/vimrc/vimrc ~/.config/nvim/init.vim` for Neovim instead.
 1. For Neovim, install `pynvim` with pip by `pip install pynvim`.
@@ -39,8 +39,9 @@ Make symlink `init.lua` linked to path to `$DOTFILES/hammerspoon/init.lua` by
 
 ## Set up Visual Studio Code
 
-Copy & paste contents of `settings.json` to `settings.json` of VS Code.
-Then install these plug-ins below.
+Make symlink `~/.config/Code\ -\ OSS/User/settings.json` linked to path to `$DOTFILES/vscode/settings.json`
+by `ln -s $DOTFILES/vscode/settings.json ~/.config/Code\ -\ OSS/User/settings.json`.
+Then, install these plug-ins below.
 
 - CodeLLDB
 - Python
