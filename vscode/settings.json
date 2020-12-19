@@ -164,6 +164,8 @@
       "before": [":"],
       "after": [";"]
     }
-  ]
+  ],
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false
 }
   
