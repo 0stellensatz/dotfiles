@@ -34,26 +34,28 @@ Just import json file to iTerm 2. That's it. 😉
 
 ## Set up Hammerspoon
 
-Make symlink `init.lua` linked to path to `$DOTFILES/hammerspoon/init.lua` by
-`ln -s $DOTFILES/hammerspoon/init.lua ~/.hammerspoon/init.lua`
+Make symlink `init.lua` linked to path to `$DOTFILES/hammerspoon/init.lua`.
+
+```shell
+ln -s $DOTFILES/hammerspoon/init.lua ~/.hammerspoon/init.lua
+```
 
 ## Set up Visual Studio Code
 
-Make symlink `~/.config/Code\ -\ OSS/User/settings.json` linked to path to `$DOTFILES/vscode/settings.json`
-by `ln -s $DOTFILES/vscode/settings.json ~/.config/Code\ -\ OSS/User/settings.json`,
-and make symlink `~/.config/Code\ -\ OSS/User/snippets` linked to path to
-`$DOTFILES/vscode/snippets` by `ln -s $DOTFILES/vscode/snippets ~/.config/Code\ -\ OSS/User/snippets`.
-Then, install these plug-ins below.
+Make symlink `~/.config/Code\ -\ OSS/User/settings.json` linked to path to `$DOTFILES/vscode/settings.json`.
 
-- CodeLLDB
-- Python
-- Rust (rls)
-- Japanese Language Package
-- Korean Language Package
-- LaTeX Workshop
-- markdownlint
-- Markdown+Math
-- Polacode
+```shell
+ln -s $DOTFILES/vscode/settings.json ~/.config/Code\ -\ OSS/User/settings.json
+```
+
+Also, make symlink `~/.config/Code\ -\ OSS/User/snippets` linked to path to
+`$DOTFILES/vscode/snippets`.
+
+```shell
+ln -s $DOTFILES/vscode/snippets ~/.config/Code\ -\ OSS/User/snippets
+```
+
+Then, install extensions from `extensions.json`
 
 ## Set up Firefox
 
@@ -74,7 +76,14 @@ Clone [be5invis/Iosevka](https://github.com/be5invis/Iosevka.git) and create
 a symlink to `iosevka/private-build-plans.toml` in root directory of repo.
 Then follow the [instructions](https://github.com/be5invis/Iosevka#building-from-source).
 
-## KDE font configuration
+## Set up Fontconfig
 
-Copy `kde/00usersettings.conf` to `/etc/fonts/conf.d`.
+```shell
+ln -s $DOTFILES/fontconfig/fonts.conf $HOME/.config/fontconfig/fonts.conf
+```
 
+## Set up irssi
+
+```shell
+ln -s $DOTFILES/irssi/config $HOME/.irssi/config
+```
