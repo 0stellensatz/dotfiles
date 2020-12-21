@@ -1,57 +1,12 @@
 {
   "signature": {
     "prefix": "signature",
-    "body": "S. Hyeon\n\n- loudclr@gmail.com\n- https://github.com/loudcolour",
+    "body": "S. Hyeon\n\n- me@nullstellensatz.org\n- https://github.com/loudcolour",
     "description": "Signature"
   },
   "email": {
     "prefix": "email",
-    "body": "loudclr@gmail.com",
+    "body": "me@nullstellensatz.org",
     "description": "Email"
   },
-  "name": {
-    "prefix": "name",
-    "body": "S. Hyeon",
-    "description": "Name"
-  },
-  "nameFull": {
-    "prefix": "nameFull",
-    "body": "Hyeon Seung-hyeon",
-    "description": "Full Name"
-  },
-  "nameKorean": {
-    "prefix": "nameKorean",
-    "body": "현승현",
-    "description": "Name (Korean)"
-  },
-  "nameJapanese": {
-    "prefix": "nameJapanese",
-    "body": "玄承賢",
-    "description": "Name (Japanese)"
-  },
-  "date": {
-    "prefix": "date",
-    "body": "`date +%F`",
-    "description": "Date"
-  },
-  "time": {
-    "prefix": "time",
-    "body": "`date +%T`",
-    "description": "Time"
-  },
-  "dt": {
-    "prefix": "dt",
-    "body": "`date +\"%F %T %z\"`",
-    "description": "Date and Time"
-  },
-  "uts": {
-    "prefix": "uts",
-    "body": "`date +%s`",
-    "description": "Unix Timestamp"
-  },
-  "box": {
-    "prefix": "box",
-    "body": "`!p snip.rv = '┌'+'─'*(len(t[1])+2)+'┐'`\n│ $1 │\n`!p snip.rv = '└'+'─'*(len(t[1])+2)+'┘'`\n$0",
-    "description": "Box"
-  }
 }
