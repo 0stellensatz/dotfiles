@@ -2,7 +2,7 @@
   "window.zoomLevel": 0,
 
   "editor.fontFamily": "Iosevka Cherrypick",
-  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.multiCursorModifier": "alt",
   "editor.smoothScrolling": false,
   "editor.wordWrap": "on",
   "editor.tabCompletion": "on",
