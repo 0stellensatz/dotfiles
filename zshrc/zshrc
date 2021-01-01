@@ -47,6 +47,6 @@ alias bak_pacman_list="pacman -Qqe > pkglist-\$(date +%F).txt"
 alias bak_pacman_foreign="pacman -Qqem > pkglist-foreign-\$(date +%F).txt"
 alias bak_pacman_db="tar -cjvf pacman_database-\$(date +%F).tar.bz2 /var/lib/pacman/local"
 
-alias rsync_home="sudo rsync -aAHXvh \$HOME . --delete-after"
-alias rsync_home_dry="sudo rsync -aAHXvnh \$HOME . --delete-after"
+alias rsync_home="sudo rsync -aAHXvh --exclude-from=\$HOME/.rsync-exclusion \$HOME . --delete-after"
+alias rsync_home_dry="sudo rsync -aAHXvnh --exclude-from=\$HOME/.rsync-exclusion \$HOME . --delete-after"
 
