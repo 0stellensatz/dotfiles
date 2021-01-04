@@ -33,6 +33,8 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
 zplug load
 
+
+
 alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
 export WORDLIST="$HOME/wordlist.txt"
 alias rndw="sort -R \$WORDLIST | head -1"
@@ -52,4 +54,4 @@ alias bak_pacman_db="tar -cjvf pacman_database-\$(date +%F).tar.bz2 /var/lib/pac
 alias rsync_home="sudo rsync -aAHXvh --exclude-from=\$HOME/.rsync-exclusion \$HOME . --delete-after"
 alias rsync_home_dry="sudo rsync -aAHXvnh --exclude-from=\$HOME/.rsync-exclusion \$HOME . --delete-after"
 
-echo "Do you know the definition of \"$(rndw)\"?"
+echo -e "Do you know the definition of \"\033[1m$(rndw)\033[0m\"?"
