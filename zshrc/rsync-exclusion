@@ -1,5 +1,4 @@
-/home/*/.thumbnails/*
-/home/*/.cache/mozilla/*
-/home/*/.cache/chromium/*
-/home/*/.gvfs
+.thumbnails/*
+.cache/mozilla/*
+.cache/chromium/*
 
