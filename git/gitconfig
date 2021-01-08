@@ -1,0 +1,12 @@
+[user]
+	name = S. Hyeon
+	email = me@nullstellensatz.org
+	signingkey = 0FC451DD8269D7DC
+[commit]
+	gpgsign = true
+[credential]
+	helper = store
+[pull]
+	rebase = false
+[core]
+	editor = vim
