@@ -67,7 +67,17 @@
 \newcommand{\SetC}{\mathbb{C}}
 \newcommand{\SetF}{\mathbb{F}}
 
-\theoremstyle{plain}
+\newtheoremstyle{latinplain}% name
+{2pt}% space above
+{10pt}% space below
+{}% body font
+{}% indent amount
+{\bfseries}% theorem head font
+{.}% punctuation after theorem head
+{.5em}% space after theorem head
+{}% theorem head spec (can be left empty, meaning `normal')
+
+\theoremstyle{latinplain}
 
 \newtheorem{theoremnobox}{\termTheorem}[section]
 \newtheorem{axiomnobox}{\termAxiom}[section]
