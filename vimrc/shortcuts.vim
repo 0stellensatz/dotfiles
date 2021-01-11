@@ -53,6 +53,13 @@ vnoremap k j
 nnoremap h k
 vnoremap h k
 
+nnoremap <C-w>j <C-w>h
+vnoremap <C-w>j <C-w>h
+nnoremap <C-w>k <C-w>j
+vnoremap <C-w>k <C-w>j
+nnoremap <C-w>h <C-w>k
+vnoremap <C-w>h <C-w>k
+
 " swap r and <C-r>
 
 nnoremap r <C-r>

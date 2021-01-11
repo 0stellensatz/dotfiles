@@ -17,15 +17,17 @@ set autoread
 set autowrite
 set backspace=indent,eol,start
 set cursorline
-set noexpandtab
-set number
 set hidden
+set number
 set ruler
-set shiftwidth=4
 set shortmess=at
 set showmatch
 set smartcase
-set ts=4
+
+set noexpandtab
+set tabstop=8
+set shiftwidth=4
+set softtabstop=4
 
 set foldenable
 set foldlevelstart=15
