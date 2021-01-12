@@ -24,10 +24,15 @@ set shortmess=at
 set showmatch
 set smartcase
 
-set noexpandtab
-set tabstop=8
-set shiftwidth=4
-set softtabstop=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+
+autocmd BufNewFile,BufRead *.json setlocal ft=javascript
+autocmd BufNewFile,BufRead *.yaml setlocal sw=2 ts=2 sts=2 et
+autocmd BufNewFile,BufRead *.py   setlocal sw=4 ts=4 sts=4 et
+autocmd BufNewFile,BufRead *.tex   setlocal sw=4 ts=4 sts=4 et
 
 set foldenable
 set foldlevelstart=15
@@ -36,8 +41,9 @@ set number relativenumber
 
 set laststatus=2
 set statusline=\ T%L/L%l/C%c%V/B%n
+set statusline+=\ %m
 set statusline+=%=
-set statusline+=%f
+set statusline+=%r\ %y\ %f
 set statusline+=\ (%{strlen(&fenc)?&fenc:'none'})
 set statusline+=\ 
 
