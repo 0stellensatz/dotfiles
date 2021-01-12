@@ -5,7 +5,7 @@ xmap ga <Plug>(EasyAlign)
 
 " configuration for `junegunn/seoul256`
 
-let g:seoul256_background = 237
+let g:seoul256_background=235
 colo seoul256
 
 " configuration for `Sirver/ultisnips`
