@@ -1,7 +1,7 @@
 " highlighting
 
 if has("syntax")
-	syntax on
+  syntax on
 endif
 
 set hlsearch 
@@ -73,9 +73,12 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
+let &t_SI="\e[6 q"
+let &t_EI="\e[2 q"
+
 augroup InsertTheme
-	au InsertEnter * set cursorcolumn
-	au InsertLeave * set nocursorcolumn
+  au InsertEnter * set cursorcolumn
+  au InsertLeave * set nocursorcolumn
 augroup END
 
 augroup numbertoggle
