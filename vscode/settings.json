@@ -9,6 +9,7 @@
   "editor.fontSize": 15,
   "editor.fontWeight": "400",
   "editor.rulers": [ 80, 120 ],
+  "editor.tabSize": 2
 
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.letterSpacing": 1,
@@ -195,4 +196,4 @@
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false
 }
-  
+
