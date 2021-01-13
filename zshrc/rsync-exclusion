@@ -1,4 +1,5 @@
 .thumbnails/*
 .cache/mozilla/*
 .cache/chromium/*
+VirtualBox\ VMs/*
 
