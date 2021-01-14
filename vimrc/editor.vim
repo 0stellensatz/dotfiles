@@ -68,8 +68,8 @@ endif
 let &t_SI="\e[6 q"
 let &t_EI="\e[2 q"
 augroup InsertTheme
-  au InsertEnter * set cursorcolumn
-  au InsertLeave * set nocursorcolumn
+  au InsertEnter * set nocursorcolumn
+  au InsertLeave * set cursorcolumn
 augroup END
 augroup numbertoggle
   autocmd!
