@@ -1,21 +1,18 @@
-[buildPlans.iosevka-cherrypick]
-family = "Iosevka CherryPick"
-design = ["sans", "sp-fixed", "leading-1250",
-		  "cv08", "cv69", "cv43", "cv51", "cv65",
-          "cv16", "cv45", "cv32", "cv38"]
+[buildPlans.iosevka-web-fixed]
+family = "Iosevka Web Fixed"
+spacing = "fixed"
+serifs = "sans"
 
-[buildPlans.iosevka-cherrypick.weights.regular]
-shape = 400
-menu  = 400
-css   = 400
-
-[buildPlans.iosevka-cherrypick.weights.medium]
-shape = 500
-menu  = 500
-css   = 500
-
-[buildPlans.iosevka-cherrypick.weights.bold]
-shape = 700
-menu  = 700
-css   = 700
-
+[buildPlans.iosevka-web-fixed.variants.design]
+capital-q = "straight"
+l = "serifed-tailed"
+one = "base"
+six = "closed-contour"
+seven = "serifed"
+nine = "closed-contour"
+tilde = "high"
+number-sign = "slanted"
+ampersand = "et-toothed"
+at = "fourfold"
+dollar = "open"
+percent = "rings-segmented-slash"

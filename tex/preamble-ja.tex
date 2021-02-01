@@ -1,0 +1,127 @@
+% engine recommendation : platex 
+% class recommendation  : jsarticle
+% 
+
+% packages
+
+\usepackage[dvipdfmx]{graphicx}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{mdframed}
+\usepackage{physics}
+\usepackage{halloweenmath}
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{kotex}
+\usepackage[japanese]{babel}
+
+\usepackage{pxrubrica}
+
+% terminology
+
+\newcommand{\termTheorem}{定理\rmfamily}
+\newcommand{\termAxiom}{公理\rmfamily}
+\newcommand{\termProposition}{命題\rmfamily}
+\newcommand{\termLemma}{補題\rmfamily}
+\newcommand{\termConjecture}{推測\rmfamily}
+\newcommand{\termCorollary}{系\rmfamily}
+\newcommand{\termDefinition}{定義\rmfamily}
+\newcommand{\termProblem}{問題\rmfamily}
+\newcommand{\termSolution}{解答\rmfamily}
+\newcommand{\termExample}{例題\rmfamily}
+\newcommand{\termRemark}{\normalfont 注\rmfamily}
+\newcommand{\termNote}{\normalfont ノート\rmfamily}
+\newcommand{\termProof}{\normalfont 証明\rmfamily}
+
+% mathematics
+
+\DeclareMathOperator{\Li}{Li}
+\DeclareMathOperator{\Imaginary}{\mathfrak{I}}
+\DeclareMathOperator{\Real}{\mathfrak{R}}
+\DeclareMathOperator{\GenLin}{GL}
+\DeclareMathOperator{\SpecLin}{SL}
+\DeclareMathOperator{\SpecOrth}{SO}
+\DeclareMathOperator{\Kernel}{\text{Ker}}
+\DeclareMathOperator{\Image}{\text{Im}}
+\DeclareMathOperator{\Interior}{\text{Int}}
+\DeclareMathOperator{\Exterior}{\text{Ext}}
+\DeclareMathOperator{\Derived}{\text{Der}}
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+\newcommand{\SetR}{\mathbb{R}}
+\newcommand{\SetQ}{\mathbb{Q}}
+\newcommand{\SetZ}{\mathbb{Z}}
+\newcommand{\SetN}{\mathbb{N}}
+\newcommand{\SetC}{\mathbb{C}}
+\newcommand{\SetF}{\mathbb{F}}
+
+\newtheoremstyle{cjkplain}% name
+{2pt}% space above
+{10pt}% space below
+{\upshape}% body font
+{}% indent amount
+{\bfseries}% theorem head font
+{.}% punctuation after theorem head
+{.5em}% space after theorem head
+{}% theorem head spec (can be left empty, meaning `normal')
+
+\theoremstyle{cjkplain}
+
+\newtheorem{theoremnobox}{\termTheorem}[section]
+\newtheorem{axiomnobox}{\termAxiom}[section]
+\newtheorem{conjecturenobox}{\termConjecture}[section]
+\newtheorem{lemmanobox}[theoremnobox]{\termLemma}
+\newtheorem{propositionnobox}[theoremnobox]{\termProposition}
+\newtheorem{problemnobox}{\termProblem}[section]
+
+\newtheorem{corollarynobox}{\termCorollary}[theoremnobox]
+
+\newenvironment{theorem}
+{\begin{mdframed}\begin{theoremnobox}}
+{\end{theoremnobox}\end{mdframed}}
+\newenvironment{axiom}
+{\begin{mdframed}\begin{axiomnobox}}
+{\end{axiomnobox}\end{mdframed}}
+\newenvironment{lemma}
+{\begin{mdframed}\begin{lemmanobox}}
+{\end{lemmanobox}\end{mdframed}}
+\newenvironment{conjecture}
+{\begin{mdframed}\begin{conjecturenobox}}
+{\end{conjecturenobox}\end{mdframed}}
+\newenvironment{proposition}
+{\begin{mdframed}\begin{propositionnobox}}
+{\end{propositionnobox}\end{mdframed}}
+\newenvironment{problem}
+{\begin{mdframed}\begin{problemnobox}}
+{\end{problemnobox}\end{mdframed}}
+
+\newenvironment{corollary}
+{\begin{mdframed}\begin{corollarynobox}}
+{\end{corollarynobox}\end{mdframed}}
+
+\theoremstyle{definition}
+
+\newtheorem{definition}{\termDefinition}[section]
+
+\newtheorem{solution}{\termSolution}[problemnobox]
+
+\newtheorem*{example}{\termExample}
+
+\theoremstyle{remark}
+
+\newtheorem*{note}{\termNote}
+\newtheorem*{remark}{\termRemark}
+
+\renewcommand\qedsymbol{$\square$}
+

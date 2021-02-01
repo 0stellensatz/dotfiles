@@ -1,0 +1,126 @@
+% engine recommendation : xelatex
+% class recommendation  : oblivoir
+% note                  : use \usepackage{fapapersize}
+%                             \usefapapersize{a,b,c,d,e,f}
+%                         for customizing layout.
+
+% packages
+
+\usepackage{graphicx}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{mdframed}
+\usepackage{physics}
+\usepackage{halloweenmath}
+
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[hangul]{kotex}
+
+% terminology
+
+\newcommand{\termTheorem}{정리\rmfamily}
+\newcommand{\termAxiom}{공리\rmfamily}
+\newcommand{\termProposition}{명제\rmfamily}
+\newcommand{\termLemma}{보조정리\rmfamily}
+\newcommand{\termConjecture}{추측\rmfamily}
+\newcommand{\termCorollary}{따름정리\rmfamily}
+\newcommand{\termDefinition}{정의\rmfamily}
+\newcommand{\termProblem}{문제\rmfamily}
+\newcommand{\termSolution}{풀이\rmfamily}
+\newcommand{\termExample}{예제\rmfamily}
+\newcommand{\termRemark}{\normalfont 주\rmfamily}
+\newcommand{\termNote}{\normalfont 노트\rmfamily}
+\newcommand{\termProof}{\normalfont 증명\rmfamily}
+
+% mathematics
+
+\DeclareMathOperator{\Li}{Li}
+\DeclareMathOperator{\Imaginary}{\mathfrak{I}}
+\DeclareMathOperator{\Real}{\mathfrak{R}}
+\DeclareMathOperator{\GenLin}{GL}
+\DeclareMathOperator{\SpecLin}{SL}
+\DeclareMathOperator{\SpecOrth}{SO}
+\DeclareMathOperator{\Kernel}{\text{Ker}}
+\DeclareMathOperator{\Image}{\text{Im}}
+\DeclareMathOperator{\Interior}{\text{Int}}
+\DeclareMathOperator{\Exterior}{\text{Ext}}
+\DeclareMathOperator{\Derived}{\text{Der}}
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+\newcommand{\SetR}{\mathbb{R}}
+\newcommand{\SetQ}{\mathbb{Q}}
+\newcommand{\SetZ}{\mathbb{Z}}
+\newcommand{\SetN}{\mathbb{N}}
+\newcommand{\SetC}{\mathbb{C}}
+\newcommand{\SetF}{\mathbb{F}}
+
+\newtheoremstyle{cjkplain}% name
+{2pt}% space above
+{10pt}% space below
+{\upshape}% body font
+{}% indent amount
+{\bfseries}% theorem head font
+{.}% punctuation after theorem head
+{.5em}% space after theorem head
+{}% theorem head spec (can be left empty, meaning `normal')
+
+\theoremstyle{cjkplain}
+
+\newtheorem{theoremnobox}{\termTheorem}[section]
+\newtheorem{axiomnobox}{\termAxiom}[section]
+\newtheorem{conjecturenobox}{\termConjecture}[section]
+\newtheorem{lemmanobox}[theoremnobox]{\termLemma}
+\newtheorem{propositionnobox}[theoremnobox]{\termProposition}
+\newtheorem{problemnobox}{\termProblem}[section]
+
+\newtheorem{corollarynobox}{\termCorollary}[theoremnobox]
+
+\newenvironment{theorem}
+{\begin{mdframed}\begin{theoremnobox}}
+{\end{theoremnobox}\end{mdframed}}
+\newenvironment{axiom}
+{\begin{mdframed}\begin{axiomnobox}}
+{\end{axiomnobox}\end{mdframed}}
+\newenvironment{lemma}
+{\begin{mdframed}\begin{lemmanobox}}
+{\end{lemmanobox}\end{mdframed}}
+\newenvironment{conjecture}
+{\begin{mdframed}\begin{conjecturenobox}}
+{\end{conjecturenobox}\end{mdframed}}
+\newenvironment{proposition}
+{\begin{mdframed}\begin{propositionnobox}}
+{\end{propositionnobox}\end{mdframed}}
+\newenvironment{problem}
+{\begin{mdframed}\begin{problemnobox}}
+{\end{problemnobox}\end{mdframed}}
+
+\newenvironment{corollary}
+{\begin{mdframed}\begin{corollarynobox}}
+{\end{corollarynobox}\end{mdframed}}
+
+\theoremstyle{definition}
+
+\newtheorem{definition}{\termDefinition}[section]
+
+\newtheorem{solution}{\termSolution}[problemnobox]
+
+\newtheorem*{example}{\termExample}
+
+\theoremstyle{remark}
+
+\newtheorem*{note}{\termNote}
+\newtheorem*{remark}{\termRemark}
+
+\renewcommand\qedsymbol{$\square$}
+

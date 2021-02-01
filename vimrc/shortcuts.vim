@@ -6,10 +6,6 @@ command! SettingsPluginConfig :tabnew $DOTFILES/vimrc/plugins-config.vim
 command! SettingsShortcuts :tabnew $DOTFILES/vimrc/shortcuts.vim
 command! LoadSettings :source ~/.vimrc
 
-" pandoc
-
-command! BuildGFM :! pandoc -f gfm -i % -o %:r.html
-
 " tex
 
 command! BuildLaTeX :! latex % && dvipdfmx %:r
