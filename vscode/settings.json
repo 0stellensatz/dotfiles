@@ -1,7 +1,7 @@
 {
   "window.zoomLevel": 0,
 
-  "editor.fontFamily": "Iosevka Cherrypick",
+  "editor.fontFamily": "Iosevka Web Fixed",
   "editor.multiCursorModifier": "alt",
   "editor.smoothScrolling": false,
   "editor.wordWrap": "on",
