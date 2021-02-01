@@ -18,16 +18,10 @@ command! MainXeLaTeX :! xelatex main.tex
 
 command! ClearTeX :! rm %:r.aux %:r.log %:r.out %:r.dvi %:r.pdf
 
-command! OpenPDF :! open %:r.pdf
-command! OpenMain :! open main.pdf
-command! Open :! open %
-command! Reveal :! open -R %
-command! PBcopy :! cat % | pbcopy
-
-command! OpenPDFL :! xdg-open %:r.pdf
-command! OpenMainL :! xdg-open main.pdf
-command! OpenL :! xdg-open %
-command! PBcopyL :! cat % | xclip -selection clipboard
+command! OpenPDF :! xdg-open %:r.pdf
+command! OpenMain :! xdg-open main.pdf
+command! Open :! xdg-open %
+command! PBcopy :! cat % | xclip -selection clipboard
 
 " system
 
