@@ -44,18 +44,6 @@
 
 % mathematics
 
-\DeclareMathOperator{\Li}{Li}
-\DeclareMathOperator{\Imaginary}{\mathfrak{I}}
-\DeclareMathOperator{\Real}{\mathfrak{R}}
-\DeclareMathOperator{\GenLin}{GL}
-\DeclareMathOperator{\SpecLin}{SL}
-\DeclareMathOperator{\SpecOrth}{SO}
-\DeclareMathOperator{\Kernel}{\text{Ker}}
-\DeclareMathOperator{\Image}{\text{Im}}
-\DeclareMathOperator{\Interior}{\text{Int}}
-\DeclareMathOperator{\Exterior}{\text{Ext}}
-\DeclareMathOperator{\Derived}{\text{Der}}
-
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
 \DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
 
@@ -78,44 +66,18 @@
 
 \theoremstyle{cjkplain}
 
-\newtheorem{theoremnobox}{\termTheorem}[section]
-\newtheorem{axiomnobox}{\termAxiom}[section]
-\newtheorem{conjecturenobox}{\termConjecture}[section]
-\newtheorem{lemmanobox}[theoremnobox]{\termLemma}
-\newtheorem{propositionnobox}[theoremnobox]{\termProposition}
-\newtheorem{problemnobox}{\termProblem}[section]
-
-\newtheorem{corollarynobox}{\termCorollary}[theoremnobox]
-
-\newenvironment{theorem}
-{\begin{mdframed}\begin{theoremnobox}}
-{\end{theoremnobox}\end{mdframed}}
-\newenvironment{axiom}
-{\begin{mdframed}\begin{axiomnobox}}
-{\end{axiomnobox}\end{mdframed}}
-\newenvironment{lemma}
-{\begin{mdframed}\begin{lemmanobox}}
-{\end{lemmanobox}\end{mdframed}}
-\newenvironment{conjecture}
-{\begin{mdframed}\begin{conjecturenobox}}
-{\end{conjecturenobox}\end{mdframed}}
-\newenvironment{proposition}
-{\begin{mdframed}\begin{propositionnobox}}
-{\end{propositionnobox}\end{mdframed}}
-\newenvironment{problem}
-{\begin{mdframed}\begin{problemnobox}}
-{\end{problemnobox}\end{mdframed}}
-
-\newenvironment{corollary}
-{\begin{mdframed}\begin{corollarynobox}}
-{\end{corollarynobox}\end{mdframed}}
+\newtheorem{theorem}{\termTheorem}[section]
+\newtheorem{axiom}{\termAxiom}[section]
+\newtheorem{conjecture}{\termConjecture}[section]
+\newtheorem{lemma}[theorem]{\termLemma}
+\newtheorem{proposition}[theorem]{\termProposition}
+\newtheorem{problem}{\termProblem}[section]
+\newtheorem{corollary}{\termCorollary}[theorem]
 
 \theoremstyle{definition}
 
 \newtheorem{definition}{\termDefinition}[section]
-
-\newtheorem{solution}{\termSolution}[problemnobox]
-
+\newtheorem{solution}{\termSolution}[problem]
 \newtheorem*{example}{\termExample}
 
 \theoremstyle{remark}
