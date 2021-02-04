@@ -1,10 +1,12 @@
 snippet preko "Preamble (ko)" b
-\documentclass[10pt,a4paper]{oblivoir}
+\documentclass[10pt,a4paper]{article}
 
 \input{./preamble-ko.tex}
 
-\usepackage{fapapersize}
-\usefapapersize{*,*,25mm,*,25mm,*}
+%\usepackage{fapapersize}
+%\usefapapersize{*,*,25mm,*,25mm,*}
+\usepackage{geometry}
+\newgeometry{hmargin={25mm}, vmargin={25mm}}
 
 \title{$1}
 \author{S. Hyeon}
@@ -38,12 +40,14 @@ $0
 endsnippet
 
 snippet preen "Preamble (en)" b
-\documentclass[10pt,a4paper]{oblivoir}
+\documentclass[10pt,a4paper]{article}
 
 \input{./preamble-en.tex}
 
-\usepackage{fapapersize}
-\usefapapersize{*,*,25mm,*,25mm,*}
+%\usepackage{fapapersize}
+%\usefapapersize{*,*,25mm,*,25mm,*}
+\usepackage{geometry}
+\newgeometry{hmargin={25mm}, vmargin={25mm}}
 
 \title{$1}
 \author{S. Hyeon}
