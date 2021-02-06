@@ -1,3 +1,7 @@
+" configuration for `vimwiki/vimwiki'
+
+let g:vimwiki_list = [{'path': '$NOTES/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+
 " configuration for `junegunn/vim-easy-align`
 
 nmap ga <Plug>(EasyAlign)
@@ -5,7 +9,7 @@ xmap ga <Plug>(EasyAlign)
 
 " configuration for `junegunn/seoul256`
 
-let g:seoul256_background=235
+let g:seoul256_background=234
 colo seoul256
 
 " configuration for `Sirver/ultisnips`
@@ -42,3 +46,4 @@ nmap <silent> <C-s> <Plug>(coc-cursors-position)
 " configuration for `lervag/vimtex`
 
 let g:tex_flavor = 'latex'
+
