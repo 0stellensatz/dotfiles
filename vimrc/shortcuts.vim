@@ -68,3 +68,9 @@ inoremap <C-b> <Left>
 
 nnoremap <C-t> :FZF<CR>
 
+" hangul?
+
+cabbrev ㄽ wq
+cabbrev ㄹ w
+cabbrev ㅅ q
+

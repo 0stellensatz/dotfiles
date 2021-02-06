@@ -7,6 +7,8 @@ set incsearch
 
 " character encoding
 set encoding=utf-8
+set fileencoding=utf-8
+scriptencoding utf-8
 
 " editing
 set autoread
