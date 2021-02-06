@@ -27,7 +27,6 @@ Plug 'itchyny/vim-gitbranch'
 " tex, markdown
 Plug 'lervag/vimtex'
 Plug 'plasticboy/vim-markdown'
-Plug 'dkarter/bullets.vim'
 
 " rust
 Plug 'cespare/vim-toml'
