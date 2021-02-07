@@ -33,6 +33,7 @@ autocmd BufNewFile,BufRead *.json setlocal ft=javascript
 autocmd BufNewFile,BufRead *.yaml setlocal sw=2 ts=2 sts=2 et
 autocmd BufNewFile,BufRead *.py   setlocal sw=4 ts=4 sts=4 et
 autocmd BufNewFile,BufRead *.tex  setlocal sw=4 ts=4 sts=4 et
+autocmd BufNewFile,BufRead *.md   setlocal sw=4 ts=4 sts=4 et
 autocmd BufNewFile,BufRead *.rs   setlocal sw=4 ts=4 sts=4 et
 
 " folder
