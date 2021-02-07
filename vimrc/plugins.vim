@@ -28,7 +28,6 @@ Plug 'junegunn/gv.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'itchyny/vim-gitbranch'
 
 " tex, markdown
 Plug 'lervag/vimtex'
