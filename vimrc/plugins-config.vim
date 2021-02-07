@@ -1,7 +1,3 @@
-" configuration for `vimwiki/vimwiki'
-
-let g:vimwiki_list = [{'path': '$NOTES/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
-
 " configuration for `junegunn/vim-easy-align`
 
 nmap ga <Plug>(EasyAlign)

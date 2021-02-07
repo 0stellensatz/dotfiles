@@ -1,10 +1,6 @@
 " `https://github.com/junegunn/vim-plug`
 call plug#begin('~/.vim/plugged')
 
-" vimwiki
-
-Plug 'vimwiki/vimwiki'
-
 " editor
 Plug 'junegunn/fzf', { 'do': { -> fzf#install()} }
 Plug 'junegunn/fzf.vim'
@@ -47,7 +43,6 @@ Plug 'vim-ruby/vim-ruby'
 
 " theme, colorscheme
 Plug 'junegunn/seoul256.vim'
-Plug 'mhinz/vim-startify'
 
 call plug#end()
 
