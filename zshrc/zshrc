@@ -9,6 +9,7 @@ export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
 export REPO="$HOME/repo"
 export DOTFILES="$REPO/dotfiles"
 export NOTES="$REPO/notes"
+export BLOG="$REPO/blog"
 
 export FZF_DEFAULT_COMMAND="fd -I"
 export FZF_CTRL_T_COMMAND="fd -I"
