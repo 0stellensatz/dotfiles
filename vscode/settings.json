@@ -194,6 +194,16 @@
   "vim.autoSwitchInputMethod.defaultIM": "-c",
 
   "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false
+  "telemetry.enableCrashReporter": false,
+
+  "mdmath.macros": {
+    "\\SetR": "\\mathbb{R}",
+    "\\SetC": "\\mathbb{C}",
+    "\\SetQ": "\\mathbb{Q}",
+    "\\SetZ": "\\mathbb{Z}",
+    "\\SetN": "\\mathbb{N}",
+    "\\SetF": "\\mathbb{F}",
+    "’": "'"
+  }
 }
 
