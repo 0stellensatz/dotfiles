@@ -68,6 +68,7 @@ if (has("termguicolors"))
 endif
 let &t_SI="\e[6 q"
 let &t_EI="\e[2 q"
+set cursorcolumn
 augroup InsertTheme
   au InsertEnter * set nocursorcolumn
   au InsertLeave * set cursorcolumn
