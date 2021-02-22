@@ -13,7 +13,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
 
 " autocomplete, lints
-" :CocInstall coc-ultisnips
+" :CocInstall coc-ultisnips coc-vimtex ...
 Plug 'SirVer/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-json', {'do': 'yarn install --frozen-lockfile'}
