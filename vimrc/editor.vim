@@ -80,7 +80,7 @@ augroup numbertoggle
 augroup END
 set colorcolumn=80,81,130,131
 set list
-set listchars=tab:\|\ ,space:·,nbsp:+,eol:⇣
+set listchars=tab:\|\ ,lead:·,trail:·,nbsp:+,eol:⇣
 
 " window
 set splitbelow
