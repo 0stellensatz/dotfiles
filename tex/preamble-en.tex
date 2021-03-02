@@ -53,8 +53,8 @@
 \newcommand{\SetF}{\mathbb{F}}
 
 \newtheoremstyle{latinplain}% name
-{10pt}% space above
-{10pt}% space below
+{16pt}% space above
+{16pt}% space below
 {}% body font
 {}% indent amount
 {\bfseries}% theorem head font
@@ -65,12 +65,11 @@
 \theoremstyle{latinplain}
 
 \newtheorem{theorem}{\termTheorem}[section]
-\newtheorem{axiom}{\termAxiom}[section]
-\newtheorem{conjecture}{\termConjecture}[section]
+\newtheorem{conjecture}[theorem]{\termConjecture}
 \newtheorem{lemma}[theorem]{\termLemma}
 \newtheorem{proposition}[theorem]{\termProposition}
+\newtheorem{corollary}[theorem]{\termCorollary}
 \newtheorem{problem}{\termProblem}[section]
-\newtheorem{corollary}{\termCorollary}[theorem]
 
 \theoremstyle{definition}
 
