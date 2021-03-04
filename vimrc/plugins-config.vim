@@ -1,14 +1,14 @@
-" configuration for `junegunn/vim-easy-align`
+" `junegunn/vim-easy-align`
 
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 
-" configuration for `junegunn/seoul256`
+" `junegunn/seoul256`
 
 let g:seoul256_background=234
 colo seoul256
 
-" configuration for `Sirver/ultisnips`
+" `Sirver/ultisnips`
 
 let g:UltiSnipsSnippetDirectories=[$DOTFILES.'/vimrc/UltiSnips']
 
@@ -16,11 +16,11 @@ let g:UltiSnipsExpandTrigger='<c-e>'
 let g:UltiSnipsJumpForwardTrigger='<tab>'
 let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
-" configuration for `plasticboy/vim-markdown`
+" `plasticboy/vim-markdown`
 
 let g:vim_markdown_math = 1
 
-" configuration for `neoclide/coc.nvim`
+" `neoclide/coc.nvim`
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
@@ -39,7 +39,7 @@ endfunction
 
 nmap <silent> <C-s> <Plug>(coc-cursors-position)
 
-" configuration for `lervag/vimtex`
+" `lervag/vimtex`
 
 let g:tex_flavor = 'latex'
 
