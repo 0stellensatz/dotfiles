@@ -57,9 +57,9 @@ set virtualedit=block
 " command mode
 set ignorecase smartcase
 augroup dynamic_smartcase
-    autocmd!
-    autocmd CmdLineEnter : set nosmartcase
-    autocmd CmdLineLeave : set smartcase
+  autocmd!
+  autocmd CmdLineEnter : set nosmartcase
+  autocmd CmdLineLeave : set smartcase
 augroup END
 
 " theme, color scheme
@@ -80,7 +80,7 @@ augroup numbertoggle
 augroup END
 set colorcolumn=80,81,130,131
 set list
-set listchars=tab:\|\ ,lead:·,trail:·,nbsp:+,eol:⇣
+set listchars=tab:\|\ ,trail:·,nbsp:+,eol:⇣
 
 " window
 set splitbelow
