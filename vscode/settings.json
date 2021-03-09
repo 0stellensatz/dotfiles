@@ -1,6 +1,4 @@
 {
-  "window.zoomLevel": 0,
-
   "editor.fontFamily": "Iosevka Web Fixed",
   "editor.multiCursorModifier": "alt",
   "editor.smoothScrolling": false,
@@ -9,7 +7,7 @@
   "editor.fontSize": 15,
   "editor.fontWeight": "400",
   "editor.rulers": [ 80, 120 ],
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
 
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.letterSpacing": 1,
