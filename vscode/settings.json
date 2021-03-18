@@ -191,9 +191,6 @@
   "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/fcitx-remote {im}",
   "vim.autoSwitchInputMethod.defaultIM": "-c",
 
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
-
   "mdmath.macros": {
     "\\SetR": "\\mathbb{R}",
     "\\SetC": "\\mathbb{C}",
@@ -202,6 +199,17 @@
     "\\SetN": "\\mathbb{N}",
     "\\SetF": "\\mathbb{F}",
     "’": "'"
-  }
+  },
+  "markdown.extension.math.enabled": false,
+
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false
 }
 

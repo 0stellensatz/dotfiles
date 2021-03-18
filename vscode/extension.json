@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "bierner.markdown-footnotes",
     "bierner.markdown-mermaid",
     "goessner.mdmath",
     "james-yu.latex-workshop",
@@ -11,6 +12,7 @@
     "ms-vscode.cpptools",
     "pnp.polacode",
     "rust-lang.rust",
-    "vscodevim.vim"
+    "vscodevim.vim",
+    "yzhang.markdown-all-in-one"
   ]
 }
