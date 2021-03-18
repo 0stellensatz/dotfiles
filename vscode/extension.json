@@ -1,14 +1,15 @@
 {
   "recommendations": [
-    "ms-vscode.cpptools",
-    "ms-ceintl.vscode-language-pack-ja",
-    "ms-toolsai.jupyter",
-    "ms-ceintl.vscode-language-pack-ko",
-    "james-yu.latex-workshop",
+    "bierner.markdown-mermaid",
     "goessner.mdmath",
-    "davidanson.vscode-markdownlint",
-    "pnp.polacode",
+    "james-yu.latex-workshop",
+    "ms-ceintl.vscode-language-pack-ja",
+    "ms-ceintl.vscode-language-pack-ko",
     "ms-python.python",
+    "ms-toolsai.jupyter",
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode.cpptools",
+    "pnp.polacode",
     "rust-lang.rust",
     "vscodevim.vim"
   ]
