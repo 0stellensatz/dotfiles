@@ -12,6 +12,7 @@
     "ms-vscode.cpptools",
     "pnp.polacode",
     "rust-lang.rust",
+    "stkb.rewrap",
     "vscodevim.vim",
     "yzhang.markdown-all-in-one"
   ]
