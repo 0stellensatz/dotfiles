@@ -35,13 +35,9 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug load
 
 alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
-export WORDLIST="$HOME/wordlist.txt"
-alias rndw="sort -R \$WORDLIST | head -1"
-alias pbcopyl='xclip -selection clipboard'
-alias pbpastel='xclip -selection clipboard -o'
 
-alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pbcp='xclip -selection clipboard'
+alias pbpst='xclip -selection clipboard -o'
 
 alias bak_brew="brew list --formula -1 > brew-\$(date +%F).txt"
 alias bak_brew_cask="brew list --cask > brew-cask-\$(date +%F).txt"
@@ -53,4 +49,3 @@ alias bak_pacman_db="tar -cjvf pacman_database-\$(date +%F).tar.bz2 /var/lib/pac
 alias rsync_home="sudo rsync -aAHXvh --exclude-from=$DOTFILES/zshrc/rsync-exclusion $HOME . --delete-after"
 alias rsync_home_dry="sudo rsync -aAHXvnh --exclude-from=$DOTFILES/zshrc/rsync-exclusion $HOME . --delete-after"
 
-echo -e "Do you know the definition of \"\033[1m$(rndw)\033[0m\"?"
