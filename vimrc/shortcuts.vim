@@ -4,23 +4,22 @@ command! Settings :tabnew $DOTFILES/vimrc/editor.vim
 command! SettingsPlugin :tabnew $DOTFILES/vimrc/plugins.vim
 command! SettingsPluginConfig :tabnew $DOTFILES/vimrc/plugins-config.vim
 command! SettingsShortcuts :tabnew $DOTFILES/vimrc/shortcuts.vim
+
 command! LoadSettings :source ~/.vimrc
 
 " tex
 
-command! BuildLaTeX :! latex % && dvipdfmx %:r
 command! BuildPLaTeX :! platex % && dvipdfmx %:r
 command! BuildXeLaTeX :! xelatex %
-
-command! MainLaTeX :! latex main.tex && dvipdfmx main
-command! MainPLaTeX :! platex main.tex && dvipdfmx main
-command! MainXeLaTeX :! xelatex main.tex
+command! BuildMainPLaTeX :! platex main.tex && dvipdfmx main
+command! BuildMainXeLaTeX :! xelatex main.tex
 
 command! ClearTeX :! rm %:r.aux %:r.log %:r.out %:r.dvi %:r.pdf
 
 command! OpenPDF :! xdg-open %:r.pdf
-command! OpenMain :! xdg-open main.pdf
+command! OpenMainPDF :! xdg-open main.pdf
 command! Open :! xdg-open %
+
 command! PBcopy :! cat % | xclip -selection clipboard
 
 " system
@@ -49,13 +48,6 @@ nnoremap <C-w>k <C-w>j
 vnoremap <C-w>k <C-w>j
 nnoremap <C-w>h <C-w>k
 vnoremap <C-w>h <C-w>k
-
-" swap r and <C-r>
-
-nnoremap r <C-r>
-vnoremap r <C-r>
-nnoremap <C-r> r
-vnoremap <C-r> r
 
 " input mode arrow keys
 
