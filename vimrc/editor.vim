@@ -78,7 +78,7 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
-set colorcolumn=80,81,130,131
+set colorcolumn=80,81,120,121
 set list
 set listchars=tab:\|\ ,lead:·,trail:·,nbsp:+,eol:⇣
 

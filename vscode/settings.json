@@ -1,17 +1,30 @@
 {
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.detectIndentation": false,
   "editor.fontFamily": "Iosevka Web Fixed",
-  "editor.multiCursorModifier": "alt",
-  "editor.smoothScrolling": false,
-  "editor.wordWrap": "on",
-  "editor.tabCompletion": "on",
   "editor.fontSize": 15,
   "editor.fontWeight": "400",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 80, 120 ],
+  "editor.smoothScrolling": false,
+  "editor.tabCompletion": "on",
   "editor.tabSize": 2,
+  "editor.wordWrap": "on",
 
+  "[markdown]": {
+    "editor.tabSize": 4
+  },
+
+  "[latex]": {
+    "editor.tabSize": 4
+  },
+
+  "terminal.explorerKind": "external",
+  "terminal.external.linuxExec": "konsole",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.letterSpacing": 1,
-  "terminal.external.linuxExec": "konsole",
 
   "diffEditor.ignoreTrimWhitespace": true,
   "git.autofetch": true,
@@ -142,6 +155,7 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
   "vim.hlsearch": true,
+  "vim.smartRelativeLine": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["j"],
@@ -212,4 +226,3 @@
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false
 }
-

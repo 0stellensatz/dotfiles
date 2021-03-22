@@ -1,202 +1,135 @@
 {
-  "preko": {
-    "prefix": "preko",
-    "body": "\\documentclass[10pt,a4paper]{oblivoir}\n\n\\input{./preamble_ko.tex}\n\n\\usepackage{fapapersize}\n\\usefapapersize{*,*,25mm,*,25mm,*}\n\n\\title{$1}\n\\author{S. Hyeon}\n\n\\begin{document}\n\n\\maketitle\n\\tableofcontents\n\n$0\n\n\\end{document}",
-    "description": "Preamble (ko)"
+  "Standalone tikz-cd": {
+    "prefix": ["tikzcdsa"],
+    "body": [
+      "\\documentclass[crop,tikz]{standalone}",
+      "\\usepackage{tikz-cd}",
+      "",
+      "\\begin{document}",
+      "",
+      "\\begin{tikzcd}",
+      "$0",
+      "\\end{tikzcd}",
+      "",
+      "\\end{document}"
+    ],
+    "description": "Standalone tikz-cd."
   },
-  "preja": {
-    "prefix": "preja",
-    "body": "\\documentclass[10pt,a4paper]{jsarticle}\n\n\\input{./preamble_ja.tex}\n\n\\title{$1}\n\\author{S. Hyeon}\n\n\\begin{document}\n\n\\maketitle\n\\tableofcontents\n\n$0\n\n\\end{document}",
-    "description": "Preamble (ja)"
+  "Preamble: Korean": {
+    "prefix": ["preko"],
+    "body": [
+      "\\documentclass[10pt,a4paper]{article}",
+      "",
+      "\\input{./preamble-ko.tex}",
+      "",
+      "%\\usepackage{fapapersize}",
+      "%\\usefapapersize{*,*,25mm,*,25mm,*}",
+      "\\usepackage{geometry}",
+      "\\newgeometry{hmargin={25mm}, vmargin={25mm}}",
+      "",
+      "\\title{${1:title}}",
+      "\\author{${2:author}}",
+      "",
+      "\\begin{document}",
+      "",
+      "\\maketitle",
+      "\\tableofcontents",
+      "",
+      "$0",
+      "",
+      "\\end{document}"
+    ],
+    "description": "Preamble: Korean, with ./preamble-ko.tex file."
   },
-  "block": {
-    "prefix": "block",
-    "body": "\\begin{$1}\n\t$2\n\\end{$1}$0",
-    "description": "\\begin{} / \\end{}"
+  "Preamble: Japanese": {
+    "prefix": ["preja"],
+    "body": [
+      "\\documentclass[10pt,a4paper]{jsarticle}",
+      "",
+      "\\input{./preamble-ja.tex}",
+      "",
+      "\\title{${1:title}}",
+      "\\author{${2:author}}",
+      "",
+      "\\begin{document}",
+      "",
+      "\\maketitle",
+      "\\tableofcontents",
+      "",
+      "$0",
+      "",
+      "\\end{document}"
+    ],
+    "description": "Preamble: Japanese, with ./preamble-ja.tex file."
   },
-  "textbf": {
-    "prefix": "textbf",
-    "body": "\\textbf{$1}$0",
-    "description": "Bold"
+  "Preamble: English": {
+    "prefix": ["preen"],
+    "body": [
+      "\\documentclass[10pt,a4paper]{article}",
+      "",
+      "\\input{./preamble-en.tex}",
+      "",
+      "%\\usepackage{fapapersize}",
+      "%\\usefapapersize{*,*,25mm,*,25mm,*}",
+      "\\usepackage{geometry}",
+      "\\newgeometry{hmargin={25mm}, vmargin={25mm}}",
+      "",
+      "\\title{${1:title}}",
+      "\\author{${2:author}}",
+      "",
+      "\\begin{document}",
+      "",
+      "\\maketitle",
+      "\\tableofcontents",
+      "",
+      "$0",
+      "",
+      "\\end{document}"
+    ],
+    "description": "Preamble: English, with ./preamble-en.tex file."
   },
-  "emph": {
-    "prefix": "emph",
-    "body": "\\emph{$1}$0",
-    "description": "Emphasize"
+  "Block Environment": {
+    "prefix": ["blck"],
+    "body": [
+      "\\begin{${1:environment}}",
+      "    $2",
+      "\\end{${1:environment}}$0"
+    ],
+    "description": "Block Environment."
   },
-  "ss": {
-    "prefix": "ss",
-    "body": "$$1$$0",
-    "description": "$$"
+  "Inline Math": {
+    "prefix": ["ss"],
+    "body": ["$$1$$0"],
+    "description": "Inline Math."
   },
-  "equation": {
-    "prefix": "equation",
-    "body": "\\[\n\t$1\n\\]$0",
-    "description": "\\[\\]"
+  "Superscript": {
+    "prefix": ["sp"],
+    "body": ["^{$1}$0"],
+    "description": "Superscript."
   },
-  "sup": {
-    "prefix": "sup",
-    "body": "^{$1}$0",
-    "description": "Sup"
+  "Subscript": {
+    "prefix": ["sb"],
+    "body": ["_{$1}$0"],
+    "description": "Superscript."
   },
-  "sub": {
-    "prefix": "sub",
-    "body": "_{$1}$0",
-    "description": "Sub"
+  "\\left( \\right)": {
+    "prefix": ["p1"],
+    "body": ["\\left( $1 \\right)$0"],
+    "description": "\\left( \\right)"
   },
-  "bracketsRound": {
-    "prefix": "bracketsRound",
-    "body": "\\left( $1 \\right)$0",
-    "description": "\\left(\\right)"
+  "\\left\\{ \\right\\}": {
+    "prefix": ["p2"],
+    "body": ["\\left\\{ $1 \\right\\\\}$0"],
+    "description": "\\left\\{ \\right\\}"
   },
-  "bracketsCurly": {
-    "prefix": "bracketsCurly",
-    "body": "\\left\\\\{ $1 \\right\\\\}$0",
-    "description": "\\left\\{\\right\\}"
+  "\\left[ \\right]": {
+    "prefix": ["p3"],
+    "body": ["\\left[ $1 \\right]$0"],
+    "description": "\\left[ \\right]"
   },
-  "bracketsSquare": {
-    "prefix": "bracketsSquare",
-    "body": "\\left[ $1 \\right]$0",
-    "description": "\\left[\\right]"
-  },
-  "bracketsAngle": {
-    "prefix": "bracketsAngle",
-    "body": "\\langle $1 \\rangle$0",
-    "description": "\\langle\\rangle"
-  },
-  "sqrt": {
-    "prefix": "sqrt",
-    "body": "\\sqrt{$1}$0",
-    "description": "Square Root"
-  },
-  "lim": {
-    "prefix": "lim",
-    "body": "\\lim_{$1 \\to $2}$0",
-    "description": "Limit"
-  },
-  "int": {
-    "prefix": "int",
-    "body": "\\int_{$1}^{$2}$0",
-    "description": "Integral"
-  },
-  "sum": {
-    "prefix": "sum",
-    "body": "\\sum_{$1}^{$2}$0",
-    "description": "Sum"
-  },
-  "prod": {
-    "prefix": "prod",
-    "body": "\\prod_{$1}^{$2}$0",
-    "description": "Product"
-  },
-  "bigcap": {
-    "prefix": "bigcap",
-    "body": "\\bigcap_{$1}^{$2}$0",
-    "description": "Cap"
-  },
-  "bigcup": {
-    "prefix": "bigcup",
-    "body": "\\bigcup_{$1}^{$2}$0",
-    "description": "Cup"
-  },
-  "frac": {
-    "prefix": "frac",
-    "body": "\\frac{$1}{$2}$0",
-    "description": "Fractions"
-  },
-  "dfrac": {
-    "prefix": "dfrac",
-    "body": "\\dfrac{$1}{$2}$0",
-    "description": "Fractions"
-  },
-  "cfrac": {
-    "prefix": "cfrac",
-    "body": "\\cfrac{$1}{$2}$0",
-    "description": "Fractions"
-  },
-  "binom": {
-    "prefix": "binom",
-    "body": "\\binom{$1}{$2}$0",
-    "description": "Binomial"
-  },
-  "section": {
-    "prefix": "section",
-    "body": "\\section{$1}$0",
-    "description": "Section"
-  },
-  "subsection": {
-    "prefix": "subsection",
-    "body": "\\subsection{$1}$0",
-    "description": "Subsection"
-  },
-  "subsubsection": {
-    "prefix": "subsubsection",
-    "body": "\\subsubsection{$1}$0",
-    "description": "Subsubsection"
-  },
-  "axiom": {
-    "prefix": "axiom",
-    "body": "\\begin{axiom}\n\t$1\n\\end{axiom}",
-    "description": "Axiom"
-  },
-  "proposition": {
-    "prefix": "proposition",
-    "body": "\\begin{proposition}\n\t$1\n\\end{proposition}",
-    "description": "Proposition"
-  },
-  "theorem": {
-    "prefix": "theorem",
-    "body": "\\begin{theorem}\n\t$1\n\\end{theorem}",
-    "description": "Theorem"
-  },
-  "lemma": {
-    "prefix": "lemma",
-    "body": "\\begin{lemma}\n\t$1\n\\end{lemma}",
-    "description": "Lemma"
-  },
-  "corollary": {
-    "prefix": "corollary",
-    "body": "\\begin{corollary}\n\t$1\n\\end{corollary}",
-    "description": "Corollary"
-  },
-  "definition": {
-    "prefix": "definition",
-    "body": "\\begin{definition}\n\t$1\n\\end{definition}",
-    "description": "Definition"
-  },
-  "proof": {
-    "prefix": "proof",
-    "body": "\\begin{proof}\n\t$1\n\\end{proof}",
-    "description": "Proof"
-  },
-  "example": {
-    "prefix": "example",
-    "body": "\\begin{example}\n\t$1\n\\end{example}",
-    "description": "Example"
-  },
-  "problem": {
-    "prefix": "problem",
-    "body": "\\begin{problem}\n\t$1\n\\end{problem}",
-    "description": "Problem"
-  },
-  "solution": {
-    "prefix": "solution",
-    "body": "\\begin{solution}\n\t$1\n\\end{solution}",
-    "description": "Solution"
-  },
-  "note": {
-    "prefix": "note",
-    "body": "\\begin{note}\n\t$1\n\\end{note}",
-    "description": "Note"
-  },
-  "remark": {
-    "prefix": "remark",
-    "body": "\\begin{remark}\n\t$1\n\\end{remark}",
-    "description": "Remark"
-  },
-  "conjecture": {
-    "prefix": "conjecture",
-    "body": "\\begin{conjecture}\n\t$1\n\\end{conjecture}",
-    "description": "Conjecture"
+  "\\langle \\rangle": {
+    "prefix": ["p4"],
+    "body": ["\\langle $1 \\rangle$0"],
+    "description": "\\langle \\rangle"
   }
 }
