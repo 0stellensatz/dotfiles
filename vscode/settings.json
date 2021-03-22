@@ -151,11 +151,12 @@
   "latex-workshop.view.pdf.viewer": "tab",
 
   "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": false,
   "vim.hlsearch": true,
+  "vim.incsearch": true,
   "vim.smartRelativeLine": true,
+  "vim.useCtrlKeys": false,
+  "vim.useSystemClipboard": true,
+
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["j"],
@@ -200,10 +201,11 @@
       "after": [";"]
     }
   ],
+
+  "vim.autoSwitchInputMethod.defaultIM": "-c",
   "vim.autoSwitchInputMethod.enable": true,
   "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/fcitx-remote",
   "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/fcitx-remote {im}",
-  "vim.autoSwitchInputMethod.defaultIM": "-c",
 
   "mdmath.macros": {
     "\\SetR": "\\mathbb{R}",

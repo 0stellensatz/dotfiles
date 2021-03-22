@@ -11,4 +11,3 @@ ln -s $DOTFILES/vscode/snippets ~/.config/Code\ -\ OSS/User/snippets
 ```
 
 Then, install extensions from `extensions.json`.
-
