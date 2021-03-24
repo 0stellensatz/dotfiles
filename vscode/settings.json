@@ -1,4 +1,6 @@
 {
+  "workbench.colorTheme": "Visual Studio Dark",
+
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.detectIndentation": false,
