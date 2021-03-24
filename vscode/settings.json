@@ -21,6 +21,22 @@
     "editor.tabSize": 4
   },
 
+  "[rust]": {
+    "editor.tabSize": 4
+  },
+
+  "[python]": {
+    "editor.tabSize": 4
+  },
+
+  "[cpp]": {
+    "editor.tabSize": 4
+  },
+
+  "[c]": {
+    "editor.tabSize": 4
+  },
+
   "terminal.explorerKind": "external",
   "terminal.external.linuxExec": "konsole",
   "terminal.integrated.fontSize": 15,
