@@ -230,9 +230,12 @@
     "\\SetZ": "\\mathbb{Z}",
     "\\SetN": "\\mathbb{N}",
     "\\SetF": "\\mathbb{F}",
-    "’": "'"
+    "’": "'",
+    "”": "''"
   },
   "markdown.extension.math.enabled": false,
+  "markdown.extension.orderedList.autoRenumber": false,
+  "markdown.extension.orderedList.marker": "one",
 
   "workbench.editorAssociations": [
     {
