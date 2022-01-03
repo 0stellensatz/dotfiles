@@ -19,6 +19,7 @@
 \usepackage{setspace}
 
 \usepackage[utf8]{inputenc}
+\usepackage[autolanguage]{numprint}
 
 \usepackage[hangul]{kotex}
 
@@ -59,6 +60,13 @@
 {.}% punctuation after theorem head
 {.5em}% space after theorem head
 {}% theorem head spec (can be left empty, meaning `normal')
+
+\makeatletter
+\def\cleartheorem#1{%
+    \expandafter\let\csname#1\endcsname\relax
+    \expandafter\let\csname c@#1\endcsname\relax
+}
+\makeatother
 
 \theoremstyle{cjkplain}
 
