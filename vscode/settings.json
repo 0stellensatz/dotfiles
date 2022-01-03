@@ -237,12 +237,9 @@
   "markdown.extension.orderedList.autoRenumber": false,
   "markdown.extension.orderedList.marker": "one",
 
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
 
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false

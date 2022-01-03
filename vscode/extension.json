@@ -13,6 +13,7 @@
     "rust-lang.rust",
     "stkb.rewrap",
     "vscodevim.vim",
-    "yzhang.markdown-all-in-one"
+    "yzhang.markdown-all-in-one",
+    "icrawl.discord-vscode"
   ]
 }
