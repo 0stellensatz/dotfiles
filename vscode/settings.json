@@ -93,6 +93,16 @@
         "platex_doc",
         "dvipdfmx"
       ]
+    },
+    {
+      "name": "uplatex -> upbibtex -> uplatex*2 -> dvipdfmx",
+      "tools": [
+        "uplatex_doc",
+        "upbibtex",
+        "uplatex_doc",
+        "uplatex_doc",
+        "dvipdfmx"
+      ]
     }
   ],
   "latex-workshop.latex.tools": [
@@ -149,6 +159,13 @@
       ]
     },
     {
+      "name": "uplatex_doc",
+      "command": "uplatex",
+      "args": [
+        "%DOCFILE%"
+      ]
+    },
+    {
       "name": "dvipdfmx",
       "command": "dvipdfmx",
       "args": [
@@ -158,6 +175,13 @@
     {
       "name": "pbibtex",
       "command": "pbibtex",
+      "args": [
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "upbibtex",
+      "command": "upbibtex",
       "args": [
         "%DOCFILE%"
       ]
