@@ -211,6 +211,14 @@
       "after": ["k"]
     },
     {
+      "before": ["g", "k"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["g", "h"],
+      "after": ["g", "k"]
+    },
+    {
       "before": [";"],
       "after": [":"]
     },
@@ -231,6 +239,14 @@
     {
       "before": ["h"],
       "after": ["k"]
+    },
+    {
+      "before": ["g", "k"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["g", "h"],
+      "after": ["g", "k"]
     },
     {
       "before": [";"],
