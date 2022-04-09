@@ -273,9 +273,10 @@
     "’": "'",
     "”": "''"
   },
-  "markdown.extension.math.enabled": false,
   "markdown.extension.orderedList.autoRenumber": false,
   "markdown.extension.orderedList.marker": "one",
+  "markdown.preview.fontSize": 18,
+  "markdown.preview.fontFamily": "sans-serif",
 
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
