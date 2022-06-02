@@ -283,5 +283,6 @@
   },
 
   "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false
+  "telemetry.enableCrashReporter": false,
+  "editor.bracketPairColorization.enabled": false
 }
