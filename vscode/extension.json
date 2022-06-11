@@ -10,7 +10,7 @@
     "ms-vscode-remote.remote-containers",
     "ms-vscode.cpptools",
     "pnp.polacode",
-    "rust-lang.rust",
+    "rust-lang.rust-analyzer",
     "stkb.rewrap",
     "vscodevim.vim",
     "icrawl.discord-vscode"
