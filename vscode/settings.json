@@ -264,6 +264,12 @@
   "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/fcitx-remote {im}",
 
   "mdmath.macros": {
+    "\\RR": "\\mathbb{R}",
+    "\\CC": "\\mathbb{C}",
+    "\\QQ": "\\mathbb{Q}",
+    "\\ZZ": "\\mathbb{Z}",
+    "\\NN": "\\mathbb{N}",
+    "\\FF": "\\mathbb{F}",
     "\\SetR": "\\mathbb{R}",
     "\\SetC": "\\mathbb{C}",
     "\\SetQ": "\\mathbb{Q}",
