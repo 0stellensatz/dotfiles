@@ -13,7 +13,7 @@ ln -s $DOTFILES/vscode/snippets ~/.config/Code/User/snippets # official binary
 In Powershell (Administrator),
 
 ```powershell
-New-Item -ItemType SymbolicLink -Path "~\AppData\Roaming\Code\User\settings.json" -Target ".\settings.json"
+New-Item -ItemType SymbolicLink -Path "~\AppData\Roaming\Code\User\settings.json" -Target ".\settings-windows.json"
 New-Item -ItemType SymbolicLink -Path "~\AppData\Roaming\Code\User\snippets" -Target ".\snippets"
 ```
 
