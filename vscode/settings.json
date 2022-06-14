@@ -12,6 +12,7 @@
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
+  "editor.autoClosingBrackets": "never",
 
   "[markdown]": {
     "editor.tabSize": 4
