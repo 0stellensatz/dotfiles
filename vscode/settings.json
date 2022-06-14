@@ -290,5 +290,7 @@
 
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
-  "editor.bracketPairColorization.enabled": false
+  "editor.bracketPairColorization.enabled": false,
+
+  "git.confirmSync": false
 }
