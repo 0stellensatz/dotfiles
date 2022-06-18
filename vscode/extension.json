@@ -13,6 +13,7 @@
     "rust-lang.rust-analyzer",
     "stkb.rewrap",
     "vscodevim.vim",
-    "icrawl.discord-vscode"
+    "icrawl.discord-vscode",
+    "ms-vscode-remote.remote-ssh"
   ]
 }
