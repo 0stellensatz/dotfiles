@@ -293,5 +293,8 @@
   "telemetry.enableCrashReporter": false,
   "editor.bracketPairColorization.enabled": false,
 
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "remote.SSH.remotePlatform": {
+    "localhost": "linux"
+  }
 }
