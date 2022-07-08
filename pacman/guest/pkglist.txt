@@ -3,7 +3,6 @@ automake
 base
 bison
 ccid
-cloudflare-warp-bin
 dhcpcd
 dialog
 docker
