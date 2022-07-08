@@ -8,5 +8,5 @@
 	helper = store
 [pull]
 	rebase = false
-[core]
-	editor = vim
+[gpg]
+	program = "C:/Program Files (x86)/GnuPG/bin/gpg.exe"
