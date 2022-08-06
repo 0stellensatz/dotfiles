@@ -3,6 +3,7 @@ automake
 base
 bison
 ccid
+cmake
 dhcpcd
 dialog
 docker
