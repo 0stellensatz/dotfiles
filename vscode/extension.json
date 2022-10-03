@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "bierner.markdown-footnotes",
+    "bierner.markdown-checkbox",
     "goessner.mdmath",
     "james-yu.latex-workshop",
     "ms-ceintl.vscode-language-pack-ja",
