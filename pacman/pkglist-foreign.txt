@@ -1,5 +1,1 @@
-texlive-local-physics
-texlive-local-pict2e
-texlive-local-tikz-cd
-tllocalmgr-git
 yay-bin
