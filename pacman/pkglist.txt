@@ -1,3 +1,4 @@
+apache
 autoconf
 automake
 base
@@ -19,6 +20,7 @@ ghc
 git
 grub
 highlight
+imagemagick
 julia
 linux
 linux-firmware
@@ -29,6 +31,7 @@ m4
 make
 man-db
 man-pages
+mariadb
 neofetch
 netctl
 networkmanager
@@ -39,6 +42,10 @@ pandoc
 patch
 pcsclite
 pdf2svg
+php
+php-apache
+php-imagick
+phpmyadmin
 pkgconf
 python
 python-pip
@@ -54,8 +61,12 @@ texlive-langextra
 texlive-langgreek
 texlive-langjapanese
 texlive-langkorean
+texlive-local-physics
+texlive-local-pict2e
+texlive-local-tikz-cd
 thunar
 thunar-volman
+tllocalmgr-git
 tumbler
 ufw
 unzip
