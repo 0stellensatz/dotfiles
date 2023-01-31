@@ -1,12 +1,13 @@
 # .files
 
+1. `brew`
+1. `fontconfig`
+1. `git`
+1. `hammerspoon`
+1. `iosevka`
+1. `pacman`
+1. `tex`
+1. `vimrc`
+1. `vscode`
+1. `windows-terminal`
 1. `zshrc`
-2. `vimrc`
-3. `git`
-4. `vscode`
-5. `fontconfig`
-6. `iosevka`
-7. `irssi`
-8. `spotifyd`
-9. `hammerspoon`
-
