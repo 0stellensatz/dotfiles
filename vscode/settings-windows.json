@@ -1,6 +1,6 @@
 {
   "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.detectIndentation": false,
   "editor.fontFamily": "Iosevka Web Fixed",
   "editor.fontSize": 15,
@@ -296,5 +296,7 @@
   "git.confirmSync": false,
   "remote.SSH.remotePlatform": {
     "localhost": "linux"
-  }
+	},
+	"editor.accessibilitySupport": "off",
+	"explorer.confirmDragAndDrop": false
 }
