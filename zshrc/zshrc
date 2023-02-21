@@ -52,6 +52,6 @@ alias backup-pacman-list-d="pacman -Qqe > pkglist-\$(date +%F).txt"
 alias backup-pacman-foreign-d="pacman -Qqem > pkglist-foreign-\$(date +%F).txt"
 alias backup-pacman-db-d="tar -cjvf pacman_database-\$(date +%F).tar.bz2 /var/lib/pacman/local"
 
-alias rsync-home="sudo rsync -aAHXvh --exclude-from=$DOTFILES/zshrc/rsync-exclusion $HOME . --delete-after"
-alias rsync-home-dry="sudo rsync -aAHXvnh --exclude-from=$DOTFILES/zshrc/rsync-exclusion $HOME . --delete-after"
+alias rsync-home="sudo rsync -aAHXvh --progress --exclude-from=$DOTFILES/zshrc/rsync-exclusion $HOME . --delete-after"
+alias rsync-home-dry="sudo rsync -aAHXvnh --progress --exclude-from=$DOTFILES/zshrc/rsync-exclusion $HOME . --delete-after"
 

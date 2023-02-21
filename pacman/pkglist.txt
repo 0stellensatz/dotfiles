@@ -3,6 +3,7 @@ arb
 autoconf
 automake
 base
+base-devel
 bison
 boost
 brial
@@ -67,7 +68,7 @@ nodejs
 openssh
 pacman-contrib
 palp
-pandoc
+pandoc-cli
 pari
 pari-elldata
 pari-galdata
