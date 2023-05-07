@@ -1,12 +1,11 @@
+" `nordtheme/vim`
+
+colo nord
+
 " `junegunn/vim-easy-align`
 
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
-
-" `junegunn/seoul256`
-
-let g:seoul256_background=234
-colo seoul256
 
 " `plasticboy/vim-markdown`
 
