@@ -24,8 +24,9 @@ Plug 'plasticboy/vim-markdown'
 Plug 'cespare/vim-toml'
 Plug 'rust-lang/rust.vim'
 
-" theme, colorscheme
-Plug 'junegunn/seoul256.vim'
+" theme
+
+Plug 'nordtheme/vim'
 
 call plug#end()
 
