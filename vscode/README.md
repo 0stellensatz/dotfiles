@@ -17,6 +17,6 @@ New-Item -ItemType SymbolicLink -Path "~\AppData\Roaming\Code\User\settings.json
 New-Item -ItemType SymbolicLink -Path "~\AppData\Roaming\Code\User\snippets" -Target ".\snippets"
 ```
 
-Then, install extensions from `extensions.json`.
+Then, install the extensions. (Note: run `code --list-extensions` to list the installed extensions)
 
 Note: search for '@builtin Markdown Math' to manually disable built-in Markdown Math extension and use `goessner.mdmath` instead.
