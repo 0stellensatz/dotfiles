@@ -13,6 +13,10 @@
   "editor.tabSize": 2,
   "editor.wordWrap": "on",
   "editor.autoClosingBrackets": "never",
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": false,
+
+  "explorer.confirmDragAndDrop": false,
 
   "[markdown]": {
     "editor.tabSize": 4
@@ -42,9 +46,13 @@
   "terminal.external.linuxExec": "konsole",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.letterSpacing": 1,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.external.windowsExec": "wt.exe",
+
+  "git.autofetch": true,
+  "git.confirmSync": false,
 
   "diffEditor.ignoreTrimWhitespace": true,
-  "git.autofetch": true,
 
   "keyboard.dispatch": "keyCode",
 
@@ -285,18 +293,15 @@
   "markdown.preview.fontSize": 18,
   "markdown.preview.fontFamily": "sans-serif",
 
+  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
 
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
-  "editor.bracketPairColorization.enabled": false,
 
-  "git.confirmSync": false,
   "remote.SSH.remotePlatform": {
     "localhost": "linux"
-	},
-	"editor.accessibilitySupport": "off",
-	"explorer.confirmDragAndDrop": false
+  }
 }
