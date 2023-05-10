@@ -303,5 +303,6 @@
 
   "remote.SSH.remotePlatform": {
     "localhost": "linux"
-  }
+	},
+	"latex-workshop.latex.autoBuild.run": "never"
 }
