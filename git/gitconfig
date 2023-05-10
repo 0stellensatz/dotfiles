@@ -10,3 +10,7 @@
 	rebase = false
 [core]
 	editor = vim
+[http]
+	proxy = http://proxy.noc.titech.ac.jp:3128/
+[https]
+	proxy = https://proxy.noc.titech.ac.jp:3128/
