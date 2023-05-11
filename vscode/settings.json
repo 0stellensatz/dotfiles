@@ -17,9 +17,10 @@
   "editor.bracketPairColorization.enabled": false,
 
   "explorer.confirmDragAndDrop": false,
-
+  
   "[markdown]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
   },
 
   "[latex]": {
@@ -303,6 +304,6 @@
 
   "remote.SSH.remotePlatform": {
     "localhost": "linux"
-	},
-	"latex-workshop.latex.autoBuild.run": "never"
+  },
+  "latex-workshop.latex.autoBuild.run": "never"
 }
