@@ -1,20 +1,4 @@
 {
-  "Standalone tikz-cd": {
-    "prefix": ["tikzcdsa"],
-    "body": [
-      "\\documentclass[crop,tikz]{standalone}",
-      "\\usepackage{tikz-cd}",
-      "",
-      "\\begin{document}",
-      "",
-      "\\begin{tikzcd}",
-      "$0",
-      "\\end{tikzcd}",
-      "",
-      "\\end{document}"
-    ],
-    "description": "Standalone tikz-cd."
-  },
   "Block Environment": {
     "prefix": ["blck"],
     "body": [
