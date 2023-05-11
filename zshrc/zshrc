@@ -36,21 +36,3 @@ alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
 
 alias pbcp='xclip -selection clipboard'
 alias pbpst='xclip -selection clipboard -o'
-
-alias backup-brew="brew leaves > brew.txt"
-alias backup-brew-cask="brew list --cask > brew-cask.txt"
-alias backup-macos-app="exa -l /Applications > macos.txt"
-alias backup-brew-d="brew list --formula -1 > brew-\$(date +%F).txt"
-alias backup-brew-cask-d="brew list --cask > brew-cask-\$(date +%F).txt"
-alias backup-macos-app-d="exa -l /Applications > macos-\$(date +%F).txt"
-
-alias backup-pacman-list="pacman -Qqe > pkglist.txt"
-alias backup-pacman-foreign="pacman -Qqem > pkglist-foreign.txt"
-alias backup-pacman-db="tar -cjvf pacman_database.tar.bz2 /var/lib/pacman/local"
-alias backup-pacman-list-d="pacman -Qqe > pkglist-\$(date +%F).txt"
-alias backup-pacman-foreign-d="pacman -Qqem > pkglist-foreign-\$(date +%F).txt"
-alias backup-pacman-db-d="tar -cjvf pacman_database-\$(date +%F).tar.bz2 /var/lib/pacman/local"
-
-alias rsync-home="sudo rsync -aAHXvh --progress --exclude-from=$DOTFILES/zshrc/rsync-exclusion $HOME . --delete-after"
-alias rsync-home-dry="sudo rsync -aAHXvnh --progress --exclude-from=$DOTFILES/zshrc/rsync-exclusion $HOME . --delete-after"
-
