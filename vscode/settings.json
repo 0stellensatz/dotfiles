@@ -331,6 +331,7 @@
   "markdown.preview.fontFamily": "sans-serif",
 
   "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.tree.indent": 12,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
