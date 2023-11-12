@@ -88,6 +88,15 @@
       ]
     },
     {
+      "name": "pdflatex -> biber -> pdflatex*2",
+      "tools": [
+        "pdflatex",
+        "biber",
+        "pdflatex",
+        "pdflatex"
+      ]
+    },
+    {
       "name": "uplatex",
       "tools": [
         "uplatex",
@@ -105,10 +114,30 @@
       ]
     },
     {
+      "name": "platex -> biber -> platex*2 -> dvipdfmx",
+      "tools": [
+        "platex_doc",
+        "biber",
+        "platex_doc",
+        "platex_doc",
+        "dvipdfmx"
+      ]
+    },
+    {
       "name": "uplatex -> upbibtex -> uplatex*2 -> dvipdfmx",
       "tools": [
         "uplatex_doc",
         "upbibtex",
+        "uplatex_doc",
+        "uplatex_doc",
+        "dvipdfmx"
+      ]
+    },
+    {
+      "name": "uplatex -> biber -> uplatex*2 -> dvipdfmx",
+      "tools": [
+        "uplatex_doc",
+        "biber",
         "uplatex_doc",
         "uplatex_doc",
         "dvipdfmx"
@@ -143,6 +172,13 @@
     {
       "name": "bibtex",
       "command": "bibtex",
+      "args": [
+        "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "biber",
+      "command": "biber",
       "args": [
         "%DOCFILE%"
       ]
