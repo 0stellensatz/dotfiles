@@ -1,7 +1,13 @@
 # Set up ZSH
 
-1. Put `source /path/to/zshrc` into `~/.zshrc`.
-2. Install [Oh My ZSH!](https://ohmyz.sh/)
-3. Install [Zplug](https://github.com/zplug/zplug), then run `zplug install`
-4. Install [FZF](https://github.com/junegunn/fzf) w/ shell extensions for key
-   bindings & fuzzy auto-complete.
+1. Install [Oh My ZSH!](https://ohmyz.sh/).
+1. Copy `dragon.zsh-theme` to `~/.oh-my-zsh/themes`: `cp /path/to/dragon.zsh-theme ~/.oh-my-zsh/themes`.
+1. Install [Zplug](https://github.com/zplug/zplug).
+1. Run `zplug install`.
+1. Install [FZF](https://github.com/junegunn/fzf).
+
+Then, replace the contents of `~/.zshrc` with:
+
+```
+source /path/to/zshrc
+```
