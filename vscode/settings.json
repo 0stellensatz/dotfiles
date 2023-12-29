@@ -59,14 +59,21 @@
 
   "latex-workshop.latex.recipes": [
     {
-      "name": "platex",
+      "name": "platex → dvipdfmx",
       "tools": [
         "platex",
         "dvipdfmx"
       ]
     },
     {
-      "name": "latex",
+      "name": "uplatex → dvipdfmx",
+      "tools": [
+        "uplatex",
+        "dvipdfmx"
+      ]
+    },
+    {
+      "name": "latex → dvipdfmx",
       "tools": [
         "latex",
         "dvipdfmx"
@@ -79,32 +86,13 @@
       ]
     },
     {
-      "name": "pdflatex -> bibtex -> pdflatex*2",
+      "name": "pdflatex",
       "tools": [
-        "pdflatex",
-        "bibtex",
-        "pdflatex",
         "pdflatex"
       ]
     },
     {
-      "name": "pdflatex -> biber -> pdflatex*2",
-      "tools": [
-        "pdflatex",
-        "biber",
-        "pdflatex",
-        "pdflatex"
-      ]
-    },
-    {
-      "name": "uplatex",
-      "tools": [
-        "uplatex",
-        "dvipdfmx"
-      ]
-    },
-    {
-      "name": "platex -> pbibtex -> platex*2 -> dvipdfmx",
+      "name": "platex → pbibtex → platex*2 → dvipdfmx",
       "tools": [
         "platex_doc",
         "pbibtex",
@@ -114,7 +102,7 @@
       ]
     },
     {
-      "name": "platex -> biber -> platex*2 -> dvipdfmx",
+      "name": "platex → biber → platex*2 → dvipdfmx",
       "tools": [
         "platex_doc",
         "biber",
@@ -124,7 +112,7 @@
       ]
     },
     {
-      "name": "uplatex -> upbibtex -> uplatex*2 -> dvipdfmx",
+      "name": "uplatex → upbibtex → uplatex*2 → dvipdfmx",
       "tools": [
         "uplatex_doc",
         "upbibtex",
@@ -134,13 +122,69 @@
       ]
     },
     {
-      "name": "uplatex -> biber -> uplatex*2 -> dvipdfmx",
+      "name": "uplatex → biber → uplatex*2 → dvipdfmx",
       "tools": [
         "uplatex_doc",
         "biber",
         "uplatex_doc",
         "uplatex_doc",
         "dvipdfmx"
+      ]
+    },
+    {
+      "name": "xelatex → bibtex → xelatex*2",
+      "tools": [
+        "xelatex",
+        "bibtex",
+        "xelatex",
+        "xelatex"
+      ]
+    },
+    {
+      "name": "xelatex → biber → xelatex*2",
+      "tools": [
+        "xelatex",
+        "biber",
+        "xelatex",
+        "xelatex"
+      ]
+    },
+    {
+      "name": "xelatex → biber → xelatex*2 → rclone",
+      "tools": [
+        "xelatex",
+        "biber",
+        "xelatex",
+        "xelatex",
+        "rclone"
+      ]
+    },
+    {
+      "name": "pdflatex → bibtex → pdflatex*2",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+      ]
+    },
+    {
+      "name": "pdflatex → biber → pdflatex*2",
+      "tools": [
+        "pdflatex",
+        "biber",
+        "pdflatex",
+        "pdflatex"
+      ]
+    },
+    {
+      "name": "pdflatex → biber → pdflatex*2 → rclone",
+      "tools": [
+        "pdflatex",
+        "biber",
+        "pdflatex",
+        "pdflatex",
+        "rclone"
       ]
     }
   ],
@@ -230,6 +274,15 @@
       "command": "upbibtex",
       "args": [
         "%DOCFILE%"
+      ]
+    },
+    {
+      "name": "rclone",
+      "command": "rclone",
+      "args": [
+        "sync",
+        "%DOCFILE%.pdf",
+        "Nextcloud:/temp/"
       ]
     }
   ],
