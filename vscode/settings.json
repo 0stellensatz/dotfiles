@@ -66,11 +66,11 @@
       ]
     },
     {
-      "name": "latex → dvipdfmx → rclone",
+      "name": "latex → dvipdfmx → rclone (Nextcloud)",
       "tools": [
         "latex",
         "dvipdfmx",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -81,11 +81,11 @@
       ]
     },
     {
-      "name": "platex → dvipdfmx → rclone",
+      "name": "platex → dvipdfmx → rclone (Nextcloud)",
       "tools": [
         "platex",
         "dvipdfmx",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -99,14 +99,14 @@
       ]
     },
     {
-      "name": "platex → pbibtex → platex*2 → dvipdfmx → rclone",
+      "name": "platex → pbibtex → platex*2 → dvipdfmx → rclone (Nextcloud)",
       "tools": [
         "platex_doc",
         "pbibtex",
         "platex_doc",
         "platex_doc",
         "dvipdfmx",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -120,14 +120,14 @@
       ]
     },
     {
-      "name": "platex → biber → platex*2 → dvipdfmx → rclone",
+      "name": "platex → biber → platex*2 → dvipdfmx → rclone (Nextcloud)",
       "tools": [
         "platex_doc",
         "biber",
         "platex_doc",
         "platex_doc",
         "dvipdfmx",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -138,11 +138,11 @@
       ]
     },
     {
-      "name": "uplatex → dvipdfmx → rclone",
+      "name": "uplatex → dvipdfmx → rclone (Nextcloud)",
       "tools": [
         "uplatex",
         "dvipdfmx",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -156,14 +156,14 @@
       ]
     },
     {
-      "name": "uplatex → upbibtex → uplatex*2 → dvipdfmx → rclone",
+      "name": "uplatex → upbibtex → uplatex*2 → dvipdfmx → rclone (Nextcloud)",
       "tools": [
         "uplatex_doc",
         "upbibtex",
         "uplatex_doc",
         "uplatex_doc",
         "dvipdfmx",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -177,14 +177,14 @@
       ]
     },
     {
-      "name": "uplatex → biber → uplatex*2 → dvipdfmx → rclone",
+      "name": "uplatex → biber → uplatex*2 → dvipdfmx → rclone (Nextcloud)",
       "tools": [
         "uplatex_doc",
         "biber",
         "uplatex_doc",
         "uplatex_doc",
         "dvipdfmx",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -194,10 +194,10 @@
       ]
     },
     {
-      "name": "xelatex → rclone",
+      "name": "xelatex → rclone (Nextcloud)",
       "tools": [
         "xelatex",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -210,13 +210,13 @@
       ]
     },
     {
-      "name": "xelatex → bibtex → xelatex*2 → rclone",
+      "name": "xelatex → bibtex → xelatex*2 → rclone (Nextcloud)",
       "tools": [
         "xelatex",
         "bibtex",
         "xelatex",
         "xelatex",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -229,13 +229,13 @@
       ]
     },
     {
-      "name": "xelatex → biber → xelatex*2 → rclone",
+      "name": "xelatex → biber → xelatex*2 → rclone (Nextcloud)",
       "tools": [
         "xelatex",
         "biber",
         "xelatex",
         "xelatex",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -245,10 +245,10 @@
       ]
     },
     {
-      "name": "pdflatex → rclone",
+      "name": "pdflatex → rclone (Nextcloud)",
       "tools": [
         "pdflatex",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -261,13 +261,13 @@
       ]
     },
     {
-      "name": "pdflatex → bibtex → pdflatex*2 → rclone",
+      "name": "pdflatex → bibtex → pdflatex*2 → rclone (Nextcloud)",
       "tools": [
         "pdflatex",
         "bibtex",
         "pdflatex",
         "pdflatex",
-        "rclone"
+        "rclone_nextcloud"
       ]
     },
     {
@@ -280,13 +280,13 @@
       ]
     },
     {
-      "name": "pdflatex → biber → pdflatex*2 → rclone",
+      "name": "pdflatex → biber → pdflatex*2 → rclone (Nextcloud)",
       "tools": [
         "pdflatex",
         "biber",
         "pdflatex",
         "pdflatex",
-        "rclone"
+        "rclone_nextcloud"
       ]
     }
   ],
@@ -379,12 +379,12 @@
       ]
     },
     {
-      "name": "rclone",
+      "name": "rclone_nextcloud",
       "command": "rclone",
       "args": [
         "sync",
         "%DOCFILE%.pdf",
-        "Nextcloud:/temp/"
+        "Nextcloud:/"
       ]
     }
   ],
