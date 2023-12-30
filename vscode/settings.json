@@ -59,20 +59,6 @@
 
   "latex-workshop.latex.recipes": [
     {
-      "name": "platex → dvipdfmx",
-      "tools": [
-        "platex",
-        "dvipdfmx"
-      ]
-    },
-    {
-      "name": "uplatex → dvipdfmx",
-      "tools": [
-        "uplatex",
-        "dvipdfmx"
-      ]
-    },
-    {
       "name": "latex → dvipdfmx",
       "tools": [
         "latex",
@@ -80,15 +66,26 @@
       ]
     },
     {
-      "name": "xelatex",
+      "name": "latex → dvipdfmx → rclone",
       "tools": [
-        "xelatex"
+        "latex",
+        "dvipdfmx",
+        "rclone"
       ]
     },
     {
-      "name": "pdflatex",
+      "name": "platex → dvipdfmx",
       "tools": [
-        "pdflatex"
+        "platex",
+        "dvipdfmx"
+      ]
+    },
+    {
+      "name": "platex → dvipdfmx → rclone",
+      "tools": [
+        "platex",
+        "dvipdfmx",
+        "rclone"
       ]
     },
     {
@@ -102,6 +99,17 @@
       ]
     },
     {
+      "name": "platex → pbibtex → platex*2 → dvipdfmx → rclone",
+      "tools": [
+        "platex_doc",
+        "pbibtex",
+        "platex_doc",
+        "platex_doc",
+        "dvipdfmx",
+        "rclone"
+      ]
+    },
+    {
       "name": "platex → biber → platex*2 → dvipdfmx",
       "tools": [
         "platex_doc",
@@ -109,6 +117,32 @@
         "platex_doc",
         "platex_doc",
         "dvipdfmx"
+      ]
+    },
+    {
+      "name": "platex → biber → platex*2 → dvipdfmx → rclone",
+      "tools": [
+        "platex_doc",
+        "biber",
+        "platex_doc",
+        "platex_doc",
+        "dvipdfmx",
+        "rclone"
+      ]
+    },
+    {
+      "name": "uplatex → dvipdfmx",
+      "tools": [
+        "uplatex",
+        "dvipdfmx"
+      ]
+    },
+    {
+      "name": "uplatex → dvipdfmx → rclone",
+      "tools": [
+        "uplatex",
+        "dvipdfmx",
+        "rclone"
       ]
     },
     {
@@ -122,6 +156,17 @@
       ]
     },
     {
+      "name": "uplatex → upbibtex → uplatex*2 → dvipdfmx → rclone",
+      "tools": [
+        "uplatex_doc",
+        "upbibtex",
+        "uplatex_doc",
+        "uplatex_doc",
+        "dvipdfmx",
+        "rclone"
+      ]
+    },
+    {
       "name": "uplatex → biber → uplatex*2 → dvipdfmx",
       "tools": [
         "uplatex_doc",
@@ -132,12 +177,46 @@
       ]
     },
     {
+      "name": "uplatex → biber → uplatex*2 → dvipdfmx → rclone",
+      "tools": [
+        "uplatex_doc",
+        "biber",
+        "uplatex_doc",
+        "uplatex_doc",
+        "dvipdfmx",
+        "rclone"
+      ]
+    },
+    {
+      "name": "xelatex",
+      "tools": [
+        "xelatex"
+      ]
+    },
+    {
+      "name": "xelatex → rclone",
+      "tools": [
+        "xelatex",
+        "rclone"
+      ]
+    },
+    {
       "name": "xelatex → bibtex → xelatex*2",
       "tools": [
         "xelatex",
         "bibtex",
         "xelatex",
         "xelatex"
+      ]
+    },
+    {
+      "name": "xelatex → bibtex → xelatex*2 → rclone",
+      "tools": [
+        "xelatex",
+        "bibtex",
+        "xelatex",
+        "xelatex",
+        "rclone"
       ]
     },
     {
@@ -160,12 +239,35 @@
       ]
     },
     {
+      "name": "pdflatex",
+      "tools": [
+        "pdflatex"
+      ]
+    },
+    {
+      "name": "pdflatex → rclone",
+      "tools": [
+        "pdflatex",
+        "rclone"
+      ]
+    },
+    {
       "name": "pdflatex → bibtex → pdflatex*2",
       "tools": [
         "pdflatex",
         "bibtex",
         "pdflatex",
         "pdflatex"
+      ]
+    },
+    {
+      "name": "pdflatex → bibtex → pdflatex*2 → rclone",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex",
+        "rclone"
       ]
     },
     {
