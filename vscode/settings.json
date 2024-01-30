@@ -383,7 +383,7 @@
       "name": "rclone_nextcloud",
       "command": "rclone",
       "args": [
-        "sync",
+        "copy",
         "%DOCFILE%.pdf",
         "Nextcloud:/"
       ]
