@@ -31,8 +31,3 @@ source $HOME/.cargo/env
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-autosuggestions"
 zplug load
-
-alias coin="echo 'head\ntail' | sort -R | head -1" # shell flips coin for you
-
-alias pbcp='xclip -selection clipboard'
-alias pbpst='xclip -selection clipboard -o'
