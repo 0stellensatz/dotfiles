@@ -2,7 +2,7 @@
 if has("syntax")
   syntax on
 endif
-set hlsearch 
+set hlsearch
 set incsearch
 
 " character encoding
@@ -27,13 +27,6 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-
-" filetype-specific settings, mostly indentation related
-autocmd BufNewFile,BufRead *.json setlocal ft=javascript
-autocmd BufNewFile,BufRead *.py   setlocal sw=4 ts=4 sts=4 et
-autocmd BufNewFile,BufRead *.rs   setlocal sw=4 ts=4 sts=4 et
-autocmd BufNewFile,BufRead *.tex  setlocal sw=4 ts=4 sts=4 et
-autocmd BufNewFile,BufRead *.md   setlocal sw=4 ts=4 sts=4 et
 
 " folder
 set foldenable
@@ -89,4 +82,3 @@ set splitright
 " miscellaneous
 set nocompatible
 set mouse=vin
-

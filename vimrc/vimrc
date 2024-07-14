@@ -6,5 +6,6 @@ source $DOTFILES/vimrc/editor.vim
 source $DOTFILES/vimrc/plugins.vim
 source $DOTFILES/vimrc/plugins-config.vim
 source $DOTFILES/vimrc/shortcuts.vim
+source $DOTFILES/vimrc/filetype.vim
 
 nnoremap ; :

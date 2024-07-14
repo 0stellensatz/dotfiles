@@ -1,6 +1,4 @@
-" `nordtheme/vim`
-
-colo nord
+colo seoul256
 
 " `junegunn/vim-easy-align`
 
