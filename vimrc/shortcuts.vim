@@ -8,10 +8,6 @@ command! SettingsFiletype :tabnew $DOTFILES/vimrc/filetype.vim
 
 command! LoadSettings :source ~/.vimrc
 
-" system
-
-command! SudoWrite :w !sudo tee %
-
 " swap ; and :
 
 nnoremap ; :

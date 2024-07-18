@@ -7,6 +7,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-peekaboo'
 Plug 'tpope/vim-surround'
+Plug 'lambdalisue/vim-suda'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
@@ -16,8 +17,10 @@ Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" tex, markdown
+" tex
 Plug 'lervag/vimtex'
+
+" markdown
 Plug 'plasticboy/vim-markdown'
 
 " rust
@@ -25,7 +28,6 @@ Plug 'cespare/vim-toml'
 Plug 'rust-lang/rust.vim'
 
 " colorscheme
-
 Plug 'navarasu/onedark.nvim'
 
 call plug#end()
