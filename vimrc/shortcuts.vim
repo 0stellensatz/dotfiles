@@ -1,8 +1,8 @@
 " .vimrc.d
 
-command! Settings :tabnew $DOTFILES/vimrc/editor.vim
+command! Settings :tabnew $DOTFILES/vimrc/vimrc
+command! SettingsEditor :tabnew $DOTFILES/vimrc/editor.vim
 command! SettingsPlugin :tabnew $DOTFILES/vimrc/plugins.vim
-command! SettingsPluginConfig :tabnew $DOTFILES/vimrc/plugins-config.vim
 command! SettingsShortcuts :tabnew $DOTFILES/vimrc/shortcuts.vim
 command! SettingsFiletype :tabnew $DOTFILES/vimrc/filetype.vim
 
