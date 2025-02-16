@@ -58,4 +58,18 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guifg='#5c6370' guibg='#282c34'
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guifg='#5c6370' guibg='#31353f'
 
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'*',
+                \ 'Staged'    :'+',
+                \ 'Untracked' :'?',
+                \ 'Renamed'   :'→',
+                \ 'Unmerged'  :'=',
+                \ 'Deleted'   :'x',
+                \ 'Dirty'     :'!',
+                \ 'Ignored'   :'◌',
+                \ 'Clean'     :'v',
+                \ 'Unknown'   :'?',
+\ }
+
+
 
