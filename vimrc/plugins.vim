@@ -16,6 +16,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'github/copilot.vim'
 
 " tex
 Plug 'lervag/vimtex'
@@ -54,6 +55,7 @@ let g:tex_flavor = 'latex'
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guifg='#476f97' guibg=NONE
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guifg='#979747' guibg=NONE
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guifg='#5c6370' guibg='#282c34'
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guifg='#5c6370' guibg='#31353f'
+
 

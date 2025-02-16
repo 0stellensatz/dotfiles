@@ -1,13 +1,10 @@
 # Set up ZSH
 
-1. Install [Oh My ZSH!](https://ohmyz.sh/).
-1. Copy `dragon.zsh-theme` to `~/.oh-my-zsh/themes`: `cp /path/to/dragon.zsh-theme ~/.oh-my-zsh/themes`.
-1. Install [Zplug](https://github.com/zplug/zplug).
-1. Run `zplug install`.
-1. Install [FZF](https://github.com/junegunn/fzf).
-
-Then, replace the contents of `~/.zshrc` with:
-
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cp ~/repo/dotfiles/zshrc/dragon.zsh-theme ~/.oh-my-zsh/themes
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+echo "source ~/repo/dotfiles/zshrc/zshrc" >> ~/.zshrc
 ```
-source /path/to/zshrc
-```
+

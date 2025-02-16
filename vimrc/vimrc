@@ -2,8 +2,8 @@
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 "    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-source $DOTFILES/vimrc/editor.vim
-source $DOTFILES/vimrc/plugins.vim
-source $DOTFILES/vimrc/shortcuts.vim
-source $DOTFILES/vimrc/filetype.vim
+source $REPO/dotfiles/vimrc/editor.vim
+source $REPO/dotfiles/vimrc/plugins.vim
+source $REPO/dotfiles/vimrc/shortcuts.vim
+source $REPO/dotfiles/vimrc/filetype.vim
 
