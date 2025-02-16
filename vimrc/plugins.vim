@@ -6,11 +6,11 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install()} }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-peekaboo'
+Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-surround'
 Plug 'lambdalisue/vim-suda'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'scrooloose/nerdtree'
-Plug 'junegunn/goyo.vim'
 
 " git
 Plug 'junegunn/gv.vim'
