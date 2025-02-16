@@ -1,10 +1,10 @@
 " .vimrc.d
 
-command! Settings :tabnew $DOTFILES/vimrc/vimrc
-command! SettingsEditor :tabnew $DOTFILES/vimrc/editor.vim
-command! SettingsPlugin :tabnew $DOTFILES/vimrc/plugins.vim
-command! SettingsShortcuts :tabnew $DOTFILES/vimrc/shortcuts.vim
-command! SettingsFiletype :tabnew $DOTFILES/vimrc/filetype.vim
+command! Settings :tabnew $REPO/dotfiles/vimrc/vimrc
+command! SettingsEditor :tabnew $REPO/dotfiles/vimrc/editor.vim
+command! SettingsPlugin :tabnew $REPO/dotfiles/vimrc/plugins.vim
+command! SettingsShortcuts :tabnew $REPO/dotfiles/vimrc/shortcuts.vim
+command! SettingsFiletype :tabnew $REPO/dotfiles/vimrc/filetype.vim
 
 command! LoadSettings :source ~/.vimrc
 
