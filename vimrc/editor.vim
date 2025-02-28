@@ -27,6 +27,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set breakindent
 
 " folder
 set foldenable
@@ -34,12 +35,13 @@ set foldlevelstart=15
 
 " statusline
 set laststatus=2
-set statusline=\ T%L/L%l/C%c%V/B%n
+set statusline=\ Total\ %L\ Line\ %l\ (%P)\ Col\ %c%V\ Buf\ %n
 set statusline+=\ %m
 set statusline+=%=
-set statusline+=%r\ %y\ %f
+set statusline+=%r\ %y
 set statusline+=\ (%{strlen(&fenc)?&fenc:'none'})
 set statusline+=\ 
+set showtabline=2
 
 " timeout
 set ttimeoutlen=5
@@ -82,3 +84,5 @@ set splitright
 " miscellaneous
 set nocompatible
 set mouse=vin
+set clipboard=unnamedplus
+

@@ -1,0 +1,1 @@
+coc-json coc-tsserver coc-vimtex coc-cmake coc-git coc-css coc-go coc-html coc-fzf-preview coc-cssmodules coc-markdownlint coc-java coc-lua coc-perl coc-python coc-rust-analyzer coc-toml coc-yaml coc-snippets
